@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export function BlockPage() {
   return (
-    <>
-      <div className="h-full bg-[#144723] pt-20 relative before:absolute before:content-[''] before:w-[800px] before:h-[800px] before:top-0 before:right-0 before:bg-[#afcdb6] before:opacity-20 before:blur-[120px] before:rotate-45 before:-translate-y-1/4">
+    <div className="overflow-x-hidden">
+      <div className="min-h-screen bg-[#144723] pt-20 relative before:absolute before:content-[''] before:w-full before:h-screen before:top-0 before:right-0 before:bg-gradient-to-br before:from-[#144723] before:via-[#1a5f2e] before:to-[#8AEA7C] before:opacity-30 before:blur-[80px]">
         <div className="w-full max-w-5xl mx-auto px-6">
           <div className="mt-8 lg:mt-20 flex flex-col lg:flex-row h-full lg:justify-between">
             <div className="flex flex-col lg:w-1/2 justify-between mb-8 lg:mb-0">
@@ -47,6 +47,6 @@ export function BlockPage() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
