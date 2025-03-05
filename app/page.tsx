@@ -1,13 +1,11 @@
-import Navbar from "@/components/navbar";
-import { BlockPage } from "@/components/page";
-import Services from "@/components/services";
+import Hero from "@/app/(home)/page";
+import TopNav from "@/components/TopNav";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <BlockPage />
-      <Services />
+      <TopNav />
+      <Hero />
     </>
   );
 }
