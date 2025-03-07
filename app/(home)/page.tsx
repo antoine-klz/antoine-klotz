@@ -23,10 +23,10 @@ export default function Homepage() {
             {/* Main Content */}
             <div className="text-center max-w-4xl my-auto">
               {/* Company Name - Largest Text */}
-              <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-white mb-6 font-satoshibold">Robin Wood</h1>
+              <h1 className="text-7xl md:text-8xl lg:text-[110px] font-bold tracking-tighter text-white mb-6 font-satoshibold">Robin Wood</h1>
 
               {/* Tagline - Medium Text */}
-              <p className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white/90 mb-10 font-satoshi">
+              <p className="text-3xl md:text-4xl lg:text-5xl text-white/90 mb-10 font-satoshi">
                 Ihr Experte für nachhaltigen Baumschutz auf Baustellen in Hamburg
               </p>
 

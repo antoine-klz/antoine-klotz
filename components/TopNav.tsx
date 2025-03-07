@@ -32,11 +32,11 @@ export default function TopNavigation() {
   ];
 
   return (
-    <header className="px-4 lg:px-6 h-20 flex items-center justify-center bg-gradient-to-r from-[#0E5640] via-[#0A7A5A] to-[#00A876] relative z-50">
+    <header className="px-4 lg:px-6 h-20 flex items-center justify-center bg-[#0E5640] relative z-50">
       <div className="w-full max-w-7xl flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
           <Image src="/assets/logo.png" alt="Robin Wood Logo" width={35} height={35} />
-          <span className="text-2xl font-bold text-white mt-0.5 font-satoshibold">Robin Wood</span>
+          <span className="text-2xl text-white mt-0.5 font-satoshibold">Robin Wood</span>
         </Link>
 
         {/* Desktop Navigation - hidden on mobile */}
@@ -47,7 +47,7 @@ export default function TopNavigation() {
               return (
                 <Link
                   key={item.name}
-                  className={`text-md px-4 py-2 font-bold rounded-full transition-colors flex items-center gap-1.5 font-satoshibold ${
+                  className={`text-md px-4 py-2 rounded-full transition-colors flex items-center gap-1.5 font-satoshibold ${
                     isActive ? "bg-[#8AEA7C] text-[#144723]" : "text-[#144723] hover:bg-gray-100"
                   }`}
                   href={item.path}
@@ -84,7 +84,7 @@ export default function TopNavigation() {
                 return (
                   <Link
                     key={item.name}
-                    className={`text-xl font-semibold px-6 py-4 my-1 rounded-full transition-all duration-200 ease-in-out flex items-center gap-2 w-64 justify-center font-satoshibold ${
+                    className={`text-xl px-6 py-4 my-1 rounded-full transition-all duration-200 ease-in-out flex items-center gap-2 w-64 justify-center font-satoshibold ${
                       isActive ? "bg-[#8AEA7C] text-[#144723]" : "text-white hover:bg-white/10"
                     }`}
                     href={item.path}

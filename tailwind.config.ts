@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily: {
         satoshi: ["var(--font-satoshi)"],
-        satoshiBold: ["var(--font-satoshibold)"],
+        satoshibold: ["var(--font-satoshibold)"],
       },
       colors: {
         background: "hsl(var(--background))",

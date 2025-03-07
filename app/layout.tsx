@@ -8,7 +8,7 @@ const satoshiBold = localFont({
   weight: "100 900",
 });
 
-const satoshiRegular = localFont({
+const satoshi = localFont({
   src: "../public/fonts/Satoshi-Medium.otf",
   variable: "--font-satoshi",
   weight: "100 900",
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${satoshiRegular.variable} ${satoshiBold.variable} antialiased`}>
+      <body className={`${satoshi.variable} ${satoshiBold.variable} antialiased`}>
         <div className="min-h-[calc(100vh-80px)]">{children}</div>
       </body>
     </html>
