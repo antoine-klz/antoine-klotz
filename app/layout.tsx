@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "../public/fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const satoshiBold = localFont({
+  src: "../public/fonts/Satoshi-Black.otf",
+  variable: "--font-satoshibold",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "../public/fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+
+const satoshiRegular = localFont({
+  src: "../public/fonts/Satoshi-Medium.otf",
+  variable: "--font-satoshi",
   weight: "100 900",
 });
 
@@ -28,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${satoshiRegular.variable} ${satoshiBold.variable} antialiased`}>
         <div className="min-h-[calc(100vh-80px)]">{children}</div>
       </body>
     </html>
