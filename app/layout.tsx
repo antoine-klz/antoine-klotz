@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Robin Wood - Ihr Experte für nachhaltige Baumpflege in Hamburg",
   description: "Robin Wood - Ihr Experte für nachhaltige Baumpflege in Hamburg",
   icons: {
-    icon: "/assets/logo.png",
+    icon: "/assets/logo-8.png",
   },
 };
 
