@@ -16,6 +16,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Robin Wood - Ihr Experte für nachhaltige Baumpflege in Hamburg",
   description: "Robin Wood - Ihr Experte für nachhaltige Baumpflege in Hamburg",
+  icons: {
+    icon: "/assets/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -25,7 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div className="min-h-[calc(100vh-80px)]">{children}</div>
+      </body>
     </html>
   );
 }

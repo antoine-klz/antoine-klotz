@@ -1,11 +1,12 @@
 "use client";
 
-import { Home, Rainbow, Menu, X } from "lucide-react";
+import { Home, Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
-export default function TopNav() {
+export default function TopNavigation() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -31,10 +32,10 @@ export default function TopNav() {
   ];
 
   return (
-    <header className="px-4 lg:px-6 h-20 flex items-center justify-center bg-[#144723] relative z-50">
+    <header className="px-4 lg:px-6 h-20 flex items-center justify-center bg-[#0E5640] relative z-50">
       <div className="w-full max-w-7xl flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
-          <Rainbow size={40} color="#8AEA7C" />
+          <Image src="/assets/logo.png" alt="Robin Wood Logo" width={30} height={30} />
           <span className="text-2xl font-bold text-white mt-0.5">Robin Wood</span>
         </Link>
 
