@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Trees, Recycle, Handshake } from "lucide-react";
 import Link from "next/link";
 import ContactButton from "@/components/ContactButton";
+import ValueCards from "@/components/ideas/ValueCards";
 
 export default function Homepage() {
   return (
@@ -31,20 +32,7 @@ export default function Homepage() {
               </p>
 
               {/* Icons and Value Proposition */}
-              <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
-                <div className="flex items-center gap-3">
-                  <Trees size={32} className="text-[#8AEA7C]" />
-                  <p className="text-[#8AEA7C] text-xl md:text-2xl font-medium font-satoshibold">Professionell</p>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Recycle size={32} className="text-[#8AEA7C]" />
-                  <p className="text-[#8AEA7C] text-xl md:text-2xl font-medium font-satoshibold">Nachhaltig</p>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Handshake size={32} className="text-[#8AEA7C]" />
-                  <p className="text-[#8AEA7C] text-xl md:text-2xl font-medium font-satoshibold">Zuverlässig</p>
-                </div>
-              </div>
+              <ValueCards layout="horizontal" iconSize={32} />
             </div>
           </div>
 

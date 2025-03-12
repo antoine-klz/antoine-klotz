@@ -51,7 +51,7 @@ export default function KontaktPage() {
               <div className="relative hidden md:block">
                 <div className="absolute top-[90px] left-0 flex items-center">
                   <Image src="/assets/anchor-icon.svg" alt="Anchor Icon" width={50} height={50} className="opacity-90" />
-                  <span className="text-[#FDFF45] text-xl ml-5 font-satoshibold">Im Norden zuhause</span>
+                  <span className="text-[#FDFF45] text-2xl ml-5 ">Im Norden zuhause</span>
                 </div>
               </div>
             </div>

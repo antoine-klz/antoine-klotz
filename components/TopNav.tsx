@@ -35,7 +35,7 @@ export default function TopNavigation() {
     <header className="px-4 lg:px-6 h-[72px] flex items-center justify-center bg-gradient-to-r from-[#0A4A35] via-[#0E5640] to-[#0D5038] relative z-50">
       <div className="w-full max-w-7xl flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/assets/logo-10.png" alt="Robin Wood Logo" width={30} height={30} />
+          <Image src="/assets/logo-white.svg" alt="Robin Wood Logo" width={28} height={28} />
           <span className="text-2xl text-white mt-0.5 font-satoshibold">Robin Wood</span>
         </Link>
 
