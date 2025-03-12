@@ -2,21 +2,31 @@ import { Button } from "@/components/ui/button";
 import { Trees, Recycle, Handshake } from "lucide-react";
 import Link from "next/link";
 import ContactButton from "@/components/ContactButton";
+import Image from "next/image";
 
 export default function Homepage() {
   return (
-    <div className="bg-gradient-to-br from-[#144723] to-[#0b3617] h-full">
+    <div className="bg-[#0E5640] min-h-[calc(100vh-72px)] relative overflow-hidden">
+      {/* Background Image - Hamburg Map */}
+      <div className="absolute bottom-0 right-0 w-[50%] h-[100%] opacity-40 overflow-hidden">
+        <div className="relative w-full h-full">
+          <Image
+            src="/assets/croppedmapofhamburg.png"
+            alt="Inverted Map of Hamburg"
+            fill
+            style={{
+              objectFit: "contain",
+              objectPosition: "bottom right",
+              filter: " brightness(0.8) saturate(0.7)",
+            }}
+            className="scale-110" // Slightly larger to ensure blur doesn't show edges
+          />
+          <div className="absolute inset-0 bg-gradient-to-tl from-transparent to-[#0E5640]" />
+        </div>
+      </div>
+
       {/* Hero Section */}
-      <section
-        className="w-full h-[calc(100vh-72px)] flex justify-center relative"
-        style={{
-          backgroundImage: "url('/assets/hero-image.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+      <section className="w-full h-[calc(100vh-72px)] flex justify-center relative">
         <div className="container px-4 md:px-6 w-full max-w-8xl flex flex-col justify-between relative z-10 py-12 md:pt-24 md:pb-16 h-full">
           {/* Top Content Area - Now centered vertically */}
           <div className="w-full flex flex-col items-center justify-center flex-grow">

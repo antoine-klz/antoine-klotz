@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import TopNav from "@/components/TopNav";
+import HomeNavigation from "@/components/HomeNavigation";
+
 const satoshiBold = localFont({
   src: "../public/fonts/Satoshi-Black.otf",
   variable: "--font-satoshibold",
@@ -29,9 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${satoshi.variable} ${satoshiBold.variable} antialiased`}>
+      <body className={`${satoshi.variable} ${satoshiBold.variable} antialiased bg-[#0E5640]`}>
         <TopNav />
-        <div className="min-h-[calc(100vh-80px)]">{children}</div>
+        {children}
+        <HomeNavigation />
       </body>
     </html>
   );

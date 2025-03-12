@@ -32,7 +32,7 @@ export default function TopNavigation() {
   ];
 
   return (
-    <header className="px-4 lg:px-6 h-20 flex items-center justify-center bg-[#0E5640] relative z-50">
+    <header className="px-4 lg:px-6 h-[72px] flex items-center justify-center bg-gradient-to-r from-[#0A4A35] via-[#0E5640] to-[#0D5038] relative z-50">
       <div className="w-full max-w-7xl flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
           <Image src="/assets/logo-10.png" alt="Robin Wood Logo" width={30} height={30} />
@@ -73,10 +73,10 @@ export default function TopNavigation() {
 
           {/* Full Screen Mobile Menu Overlay with Right to Left Animation */}
           <div
-            className={`fixed inset-0 bg-[#144723] z-40 transition-all duration-500 ease-in-out ${
+            className={`fixed inset-0 bg-[#0E5640] z-40 transition-all duration-500 ease-in-out ${
               mobileMenuOpen ? "translate-x-0" : "translate-x-full pointer-events-none"
             }`}
-            style={{ top: "80px" }} // Positioned right below the header
+            style={{ top: "72px" }} // Positioned right below the header
           >
             <div className="flex flex-col items-center justify-start pt-10 h-full">
               {navItems.map((item) => {
