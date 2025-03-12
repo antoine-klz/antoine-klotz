@@ -1,10 +1,8 @@
-import TopNav from "@/components/TopNav";
 import ContactButton from "@/components/ContactButton";
 
 export default function TeamPage() {
   return (
     <>
-      <TopNav />
       <div className="relative">
         {/* Contact Button */}
         <ContactButton />

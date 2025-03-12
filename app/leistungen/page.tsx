@@ -1,4 +1,3 @@
-import TopNav from "@/components/TopNav";
 import { Trees } from "lucide-react";
 import { LockIcon } from "lucide-react";
 import ContactButton from "@/components/ContactButton";
@@ -6,7 +5,6 @@ import ContactButton from "@/components/ContactButton";
 export default function LeistungenPage() {
   return (
     <>
-      <TopNav />
       <div className="relative">
         {/* Contact Button */}
         <ContactButton />

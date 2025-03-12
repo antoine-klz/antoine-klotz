@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-
+import TopNav from "@/components/TopNav";
 const satoshiBold = localFont({
   src: "../public/fonts/Satoshi-Black.otf",
   variable: "--font-satoshibold",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Robin Wood - Ihr Experte für nachhaltige Baumpflege in Hamburg",
   description: "Robin Wood - Ihr Experte für nachhaltige Baumpflege in Hamburg",
   icons: {
-    icon: "/assets/logo-8.png",
+    icon: "/assets/logo-10.png",
   },
 };
 
@@ -30,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${satoshi.variable} ${satoshiBold.variable} antialiased`}>
+        <TopNav />
         <div className="min-h-[calc(100vh-80px)]">{children}</div>
       </body>
     </html>
