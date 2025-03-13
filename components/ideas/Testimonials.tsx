@@ -68,7 +68,7 @@ export default function Testimonials({ className = "" }: TestimonialsProps) {
                     : "opacity-0 translate-x-full"
                 }`}
               >
-                <p className="text-xl md:text-2xl text-white/90 mb-6 text-center italic">"{testimonial.quote}"</p>
+                <p className="text-xl md:text-2xl text-white/90 mb-6 text-center italic">&quot;{testimonial.quote}&quot;</p>
                 <div className="text-center">
                   <p className="text-[#8AEA7C] font-medium">{testimonial.author}</p>
                   <p className="text-white/70 text-sm">{testimonial.company}</p>
@@ -93,7 +93,7 @@ export default function Testimonials({ className = "" }: TestimonialsProps) {
                 <button
                   key={index}
                   onClick={() => setActiveIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${index === activeIndex ? "bg-[#fdff45] w-4" : "bg-white/30"}`}
+                  className={`w-10 p-2 h-2 rounded-full transition-all ${index === activeIndex ? "bg-[#fdff45] w-4" : "bg-white/30"}`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />
               ))}

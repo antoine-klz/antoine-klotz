@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="space-y-6 max-w-sm">
               <div className="flex items-center gap-2">
                 <Image src="/assets/logo-white.svg" alt="Robin Wood Logo" width={28} height={28} />
-                <h3 className="text-xl text-white font-satoshibold">Robin Wood</h3>
+                <p className="text-xl text-white font-satoshibold">Robin Wood</p>
               </div>
               <p className="text-gray-200 leading-relaxed">
                 Nachhaltige Forstwirtschaft und Umweltschutz für eine grünere Zukunft. Wir setzen uns für den Erhalt unserer Wälder und eine
@@ -25,7 +25,7 @@ export default function Footer() {
             {/* Links Sections */}
             <div className="grid grid-cols-2 gap-12 md:gap-24">
               <div className="space-y-6">
-                <h3 className="text-lg font-satoshibold">Navigation</h3>
+                <p className="text-lg font-satoshibold">Navigation</p>
                 <ul className="space-y-3">
                   <li>
                     <Link href="/" className="text-gray-200 hover:text-[#8AEA7C] transition-colors">
@@ -51,7 +51,7 @@ export default function Footer() {
               </div>
 
               <div className="space-y-6">
-                <h3 className="text-lg font-satoshibold">Rechtliches</h3>
+                <p className="text-lg font-satoshibold">Rechtliches</p>
                 <ul className="space-y-3">
                   <li>
                     <Link href="/impressum" className="text-gray-200 hover:text-[#8AEA7C] transition-colors">
