@@ -28,37 +28,38 @@ export default function ValueCards({ isVisible = true, layout = "grid", iconSize
 
   if (layout === "horizontal") {
     return (
-      <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+      <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4" aria-label="Unsere Kernwerte">
         {values.map((value, index) => (
-          <div key={index} className="flex items-center gap-3">
-            <value.icon size={iconSize} className="text-[#8AEA7C]" />
-            <p className="text-[#8AEA7C] text-xl md:text-2xl font-medium font-satoshibold">{value.title}</p>
-          </div>
+          <li key={index} className="flex items-center gap-3">
+            <value.icon size={iconSize} className="text-[#8AEA7C]" aria-hidden="true" />
+            <span className="text-[#8AEA7C] text-xl md:text-2xl font-medium font-satoshibold">{value.title}</span>
+          </li>
         ))}
-      </div>
+      </ul>
     );
   }
 
   return (
-    <div
+    <ul
       className={`grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 transition-all duration-1000 delay-500 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
+      aria-label="Unsere Kernwerte"
     >
       {values.map((value, index) => (
-        <div
+        <li
           key={index}
           className="bg-white/10 backdrop-blur-md rounded-2xl p-6 transform transition-all duration-500 hover:scale-105 hover:bg-white/15 group"
         >
-          <div className="flex flex-col items-center gap-4">
-            <div className="bg-[#8AEA7C]/20 p-4 rounded-full group-hover:bg-[#8AEA7C]/30 transition-all duration-300">
-              <value.icon size={iconSize} className="text-[#8AEA7C]" />
+          <article className="flex flex-col items-center gap-4">
+            <div className="bg-[#8AEA7C]/20 p-4 rounded-full group-hover:bg-[#8AEA7C]/30 transition-all duration-300" aria-hidden="true">
+              <value.icon size={iconSize} className="text-[#8AEA7C]" aria-hidden="true" />
             </div>
-            <p className="text-[#8AEA7C] text-xl md:text-2xl font-medium font-satoshibold">{value.title}</p>
+            <h3 className="text-[#8AEA7C] text-xl md:text-2xl font-medium font-satoshibold">{value.title}</h3>
             <p className="text-white/80 text-sm">{value.description}</p>
-          </div>
-        </div>
+          </article>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
