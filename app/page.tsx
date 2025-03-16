@@ -1,32 +1,24 @@
-import ServiceHighlights from "@/components/ideas/ServiceHighlights";
 import Image from "next/image";
 import Hero from "@/components/sections/Hero";
+import Leistungen from "@/components/sections/Leistungen";
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
       <Hero />
-      {/* Leistungen Section */}
-      <section id="leistungen" className="w-full min-h-screen md:h-[calc(100vh)] flex flex-col justify-center items-center relative">
-        <div className="container px-4 md:px-6 w-full max-w-8xl flex flex-col justify-between relative z-10 py-16 md:py-0 h-full mt-[72px]">
-          <div className="flex flex-col items-center justify-center h-full">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center font-satoshibold">Unsere Leistungen</h2>
 
-            {/* Service Highlights Component */}
-            <ServiceHighlights className="mb-16" />
-          </div>
-        </div>
-      </section>
+      {/* Leistungen Section */}
+      <Leistungen />
 
       {/* Team Section */}
-      <section id="team" className="w-full min-h-screen md:h-[calc(100vh)] flex flex-col justify-center items-center relative bg-[#0D5038]/90">
+      <section id="team" className="w-full min-h-screen md:h-[calc(100vh)] flex flex-col justify-center items-center relative bg-white">
         <div className="container px-4 md:px-6 w-full max-w-8xl flex flex-col justify-between relative z-10 py-16 md:py-0 h-full mt-[72px]">
           <div className="flex flex-col items-center justify-center h-full">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center font-satoshibold">Unser Team</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-[#0E5640] mb-12 text-center font-satoshibold">Unser Team</h2>
 
             {/* Team content will be added later */}
-            <div className="text-center text-white/80 text-xl">Unser Team-Bereich wird in Kürze verfügbar sein.</div>
+            <div className="text-center text-[#0E5640] text-xl">Unser Team-Bereich wird in Kürze verfügbar sein.</div>
           </div>
         </div>
       </section>
@@ -50,7 +42,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex-1 px-4 md:px-6 lg:px-8 pt-10 md:pt-0 relative z-10 h-full mt-[72px]">
+        <div className="flex-1 px-4 md:px-6 lg:px-8 pt-10 md:pt-0 relative z-10 h-full">
           <div className="mx-auto max-w-7xl h-full flex flex-col justify-center">
             <h2 className="text-5xl font-satoshibold text-[#8AEA7C] mb-6">Kontakt</h2>
 

@@ -25,14 +25,11 @@ export default function Hero() {
       <div className="container px-4 md:px-6 w-full max-w-8xl z-10 py-12 md:py-0 mt-[72px]">
         <header className="text-center max-w-4xl mx-auto">
           <h1 className="text-7xl md:text-8xl lg:text-[115px] font-bold tracking-tighter text-white mb-6 font-satoshibold">Robin Wood</h1>
-
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-white/90 mb-10 font-satoshi">
             Ihr Experte für nachhaltigen Baumschutz auf Baustellen im Norden.
           </h2>
-
           {/* Value Proposition */}
           <ValueCards iconSize={32} showDescription={true} />
-
           <div className="pt-8">
             <ActionButtons secondaryButton="leistungen" />
           </div>
