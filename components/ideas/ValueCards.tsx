@@ -5,9 +5,10 @@ interface ValueCardsProps {
   isVisible?: boolean;
   layout?: "grid" | "horizontal";
   iconSize?: number;
+  showDescription?: boolean;
 }
 
-export default function ValueCards({ isVisible = true, layout = "grid", iconSize = 40 }: ValueCardsProps) {
+export default function ValueCards({ isVisible = true, layout = "grid", iconSize = 40, showDescription = true }: ValueCardsProps) {
   const values = [
     {
       icon: Trees,
@@ -56,7 +57,7 @@ export default function ValueCards({ isVisible = true, layout = "grid", iconSize
               <value.icon size={iconSize} className="text-[#8AEA7C]" aria-hidden="true" />
             </div>
             <h3 className="text-[#8AEA7C] text-xl md:text-2xl font-medium font-satoshibold">{value.title}</h3>
-            <p className="text-white/80 text-sm">{value.description}</p>
+            {showDescription && <p className="text-white/80 text-sm">{value.description}</p>}
           </article>
         </li>
       ))}

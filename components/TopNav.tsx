@@ -6,17 +6,11 @@ import { useState, useEffect } from "react";
 
 export default function TopNavigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
 
-  // Handle scroll event to change navbar transparency and track active section
+  // Handle scroll event to track active section
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 30;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
-      }
-
       // Track active section
       const sections = ["hero", "leistungen", "team", "kontakt"];
       const scrollPosition = window.scrollY + 100; // Add offset for better detection
@@ -39,7 +33,7 @@ export default function TopNavigation() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrolled]);
+  }, []);
 
   // Prevent scrolling when mobile menu is open
   useEffect(() => {
@@ -76,13 +70,7 @@ export default function TopNavigation() {
   ];
 
   return (
-    <header
-      className={`px-4 lg:px-6 h-[72px] flex items-center justify-center fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-gradient-to-r from-[#0A4A35]/80 via-[#0E5640]/80 to-[#0D5038]/80 backdrop-blur-sm"
-          : "bg-gradient-to-r from-[#0A4A35] via-[#0E5640] to-[#0D5038]"
-      }`}
-    >
+    <header className="px-4 lg:px-6 h-[72px] flex items-center justify-center fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#0A4A35] via-[#0E5640] to-[#0D5038]">
       <div className="w-full max-w-7xl flex justify-between items-center">
         <button onClick={() => scrollToSection("hero")} className="flex items-center gap-2">
           <Image src="/assets/logo-white.svg" alt="Robin Wood Logo" width={28} height={28} />
@@ -125,7 +113,7 @@ export default function TopNavigation() {
           <div
             className={`fixed inset-0 transition-all duration-500 ease-in-out ${
               mobileMenuOpen ? "translate-x-0" : "translate-x-full pointer-events-none"
-            } ${scrolled ? "bg-[#0E5640]/95 backdrop-blur-sm" : "bg-[#0E5640]"} z-40`}
+            } bg-[#0E5640] z-40`}
             style={{ top: "72px" }} // Positioned right below the header
           >
             <div className="flex flex-col items-center justify-start pt-10 h-full">

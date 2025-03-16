@@ -31,7 +31,7 @@ export default function Hero() {
           </h2>
 
           {/* Value Proposition */}
-          <ValueCards iconSize={32} />
+          <ValueCards iconSize={32} showDescription={true} />
 
           <div className="pt-8">
             <ActionButtons secondaryButton="leistungen" />
