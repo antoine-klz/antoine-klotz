@@ -5,22 +5,6 @@ import ActionButtons from "@/components/ActionButtons";
 export default function Hero() {
   return (
     <section id="hero" className="w-full h-[calc(100vh-70px)] relative flex items-center justify-center mt-[72px]" aria-label="Hero section">
-      {/* Hero Background Image with Next/Image */}
-      <Image
-        src="/assets/hero-image.png"
-        alt="Robin Wood hero background showing sustainable tree protection"
-        fill
-        priority
-        quality={55}
-        sizes="100vw"
-        className="object-cover z-0"
-        placeholder="blur"
-        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAEtAJJXIDTjwAAAABJRU5ErkJggg=="
-      />
-
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-70 z-[1]"></div>
-
       {/* Content Container */}
       <div className="container px-4 md:px-6 w-full max-w-8xl z-10 py-12 md:py-0">
         <header className="text-center max-w-4xl mx-auto">
@@ -35,6 +19,20 @@ export default function Hero() {
           </div>
         </header>
       </div>
+
+      {/* Hero Image with Overlay */}
+      <Image
+        src="/assets/hero-image.png"
+        alt="Robin Wood hero background showing sustainable tree protection"
+        fill
+        priority
+        quality={55}
+        sizes="100vw"
+        className="object-cover z-0"
+        placeholder="blur"
+        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAEtAJJXIDTjwAAAABJRU5ErkJggg=="
+      />
+      <div className="absolute inset-0 bg-black bg-opacity-70 z-[1]"></div>
     </section>
   );
 }

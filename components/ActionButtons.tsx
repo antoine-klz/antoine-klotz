@@ -15,7 +15,7 @@ export default function ActionButtons({ secondaryButton = "leistungen" }: Action
       sectionId: "leistungen",
     },
     team: {
-      text: "Unser Team",
+      text: "Team kennenlernen",
       sectionId: "team",
     },
   };
@@ -25,7 +25,10 @@ export default function ActionButtons({ secondaryButton = "leistungen" }: Action
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const offsetTop = element.offsetTop;
+      // Get the height of the topnav (assuming it's 70px based on section's calc)
+      const topnavHeight = 70;
+      const offsetTop = element.offsetTop - topnavHeight;
+
       window.scrollTo({
         top: offsetTop,
         behavior: "smooth",
@@ -34,9 +37,9 @@ export default function ActionButtons({ secondaryButton = "leistungen" }: Action
   };
 
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="absolute bottom-12 left-0 right-0 z-20 flex justify-center items-center">
       {/* Buttons Container */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center ">
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
         {/* Secondary Button - Customizable */}
         <Button
           variant="outline"
