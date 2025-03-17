@@ -72,13 +72,13 @@ export default function Home() {
                 </div>
                 <div className="relative hidden md:block">
                   <div className="absolute top-[90px] left-0 flex items-center">
-                    <Image src="/assets/anchor-icon.svg" alt="Anchor Icon" width={50} height={50} className="opacity-90" />
-                    <span className="text-[#FDFF45] text-2xl ml-5 ">Im Norden zuhause</span>
+                    <Image src="/assets/anchor-icon.svg" alt="Anchor Icon" width={30} height={30} className="opacity-90" />
+                    <span className="text-[#FDFF45] text-2xl ml-4 ">Im Norden zuhause</span>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-md border border-white/20 mb-10 md:mb-0">
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-md border border-white/20 mb-10 md:mb-0">
                 <form className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-white mb-1">

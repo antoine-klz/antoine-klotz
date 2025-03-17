@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import TopNav from "@/components/TopNav";
 import HomeNavigation from "@/components/HomeNavigation";
-import Footer from "@/components/ideas/Footer";
+import Footer from "@/components/sections/Footer";
 const satoshiBold = localFont({
   src: "../public/fonts/Satoshi-Black.otf",
   variable: "--font-satoshibold",
