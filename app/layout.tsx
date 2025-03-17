@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import TopNav from "@/components/TopNav";
-import HomeNavigation from "@/components/HomeNavigation";
+import TopNav from "@/components/sections/01_TopNav";
 import Footer from "@/components/sections/Footer";
+
 const satoshiBold = localFont({
   src: "../public/fonts/Satoshi-Black.otf",
   variable: "--font-satoshibold",
@@ -35,7 +35,6 @@ export default function RootLayout({
         <TopNav />
         {children}
         <Footer />
-        <HomeNavigation />
       </body>
     </html>
   );

@@ -77,7 +77,7 @@ export default function ServiceHighlights({ className = "" }: ServiceHighlightsP
               onMouseLeave={() => setActiveService(null)}
             >
               <div className="flex flex-col items-start gap-6">
-                <div className="p-4 rounded-lg" style={{ backgroundColor: `${service.color}20` }}>
+                <div className="p-4 rounded-xl" style={{ backgroundColor: `${service.color}20` }}>
                   <service.icon size={32} style={{ color: service.color }} />
                 </div>
 

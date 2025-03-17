@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Hero from "@/components/sections/Hero";
-import Leistungen from "@/components/sections/Leistungen";
+import Hero from "@/components/sections/02_Hero";
+import Leistungen from "@/components/sections/03_Leistungen";
 
 export default function Home() {
   return (
