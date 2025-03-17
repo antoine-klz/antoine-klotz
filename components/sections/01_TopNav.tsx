@@ -13,7 +13,8 @@ export default function TopNavigation() {
     const handleScroll = () => {
       // Track active section
       const sections = ["hero", "leistungen", "team", "kontakt"];
-      const scrollPosition = window.scrollY + 100; // Add offset for better detection
+      const navHeight = 72; // Height of the navigation bar
+      const scrollPosition = window.scrollY + navHeight; // Use nav height for better detection
 
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -54,8 +55,9 @@ export default function TopNavigation() {
     const element = document.getElementById(sectionId);
     if (element) {
       const offsetTop = element.offsetTop;
+      const navHeight = 70; // Height of the navigation bar
       window.scrollTo({
-        top: offsetTop,
+        top: offsetTop - navHeight,
         behavior: "smooth",
       });
     }

@@ -4,7 +4,7 @@ import ActionButtons from "@/components/ActionButtons";
 
 export default function Hero() {
   return (
-    <section id="hero" className="w-full min-h-screen md:h-screen relative flex items-center justify-center" aria-label="Hero section">
+    <section id="hero" className="w-full h-[calc(100vh-70px)] relative flex items-center justify-center mt-[72px]" aria-label="Hero section">
       {/* Hero Background Image with Next/Image */}
       <Image
         src="/assets/hero-image.png"
@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black bg-opacity-70 z-[1]"></div>
 
       {/* Content Container */}
-      <div className="container px-4 md:px-6 w-full max-w-8xl z-10 py-12 md:py-0 mt-[72px]">
+      <div className="container px-4 md:px-6 w-full max-w-8xl z-10 py-12 md:py-0">
         <header className="text-center max-w-4xl mx-auto">
           <h1 className="text-7xl md:text-8xl lg:text-[115px] font-bold tracking-tighter text-white mb-6 font-satoshibold">Robin Wood</h1>
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-white/90 mb-10 font-satoshi">
