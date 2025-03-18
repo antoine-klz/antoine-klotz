@@ -12,7 +12,7 @@ export default function TopNavigation() {
   useEffect(() => {
     const handleScroll = () => {
       // Track active section
-      const sections = ["hero", "leistungen", "team", "kontakt"];
+      const sections = ["hero", "leistungen", "projekte", "team", "kontakt"];
       const navHeight = 72; // Height of the navigation bar
       const scrollPosition = window.scrollY + navHeight; // Use nav height for better detection
 
@@ -67,6 +67,7 @@ export default function TopNavigation() {
   const navItems = [
     { name: "Home", sectionId: "hero", icon: <Home size={16} /> },
     { name: "Leistungen", sectionId: "leistungen" },
+    { name: "Projekte", sectionId: "projekte" },
     { name: "Team", sectionId: "team" },
     { name: "Kontakt", sectionId: "kontakt" },
   ];

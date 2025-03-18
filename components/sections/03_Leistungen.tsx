@@ -31,7 +31,7 @@ export default function Leistungen() {
         ))}
       </div>
 
-      <ActionButtons secondaryButton="team" />
+      <ActionButtons secondaryButton="projekte" />
     </section>
   );
 }

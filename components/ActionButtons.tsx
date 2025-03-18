@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 
-type SecondaryButtonOption = "leistungen" | "team";
+type SecondaryButtonOption = "leistungen" | "team" | "projekte";
 
 interface ActionButtonsProps {
   secondaryButton: SecondaryButtonOption;
@@ -17,6 +17,10 @@ export default function ActionButtons({ secondaryButton = "leistungen" }: Action
     team: {
       text: "Team kennenlernen",
       sectionId: "team",
+    },
+    projekte: {
+      text: "Projekte ansehen",
+      sectionId: "projekte",
     },
   };
 
