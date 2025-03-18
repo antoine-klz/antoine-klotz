@@ -7,8 +7,8 @@ import { User } from "lucide-react";
 export default function Team() {
   return (
     <section id="team" className="w-full min-h-[calc(100vh-70px)] py-16 px-4 relative bg-[#0E5640]">
-      <h2 className="text-4xl md:text-5xl text-[#8AEA7C] text-center font-satoshibold mb-3">Unser Team</h2>
-      <h3 className="text-white text-lg md:text-xl text-center max-w-4xl mx-auto mb-16">
+      <h2 className="text-4xl md:text-5xl text-white text-center font-satoshibold mb-3">Unser Team</h2>
+      <h3 className="text-[#8AEA7C] text-lg md:text-xl text-center max-w-4xl mx-auto mb-16">
         Unser erfahrenes Team steht für Qualität und Zuverlässigkeit bei allen Baumpflegearbeiten.
       </h3>
 

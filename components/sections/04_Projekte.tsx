@@ -1,12 +1,20 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { projectPins } from "@/data/Projekte";
-import NavButtons from "../NavButtons";
 import ProjectPins from "../ProjectPins";
 import StatsCounter from "../StatsCounter";
+import ProjectLegend from "../ProjectLegend";
 
 export default function Projekte() {
+  // State to track the currently active/highlighted pin
+  const [activePin, setActivePin] = useState<number | null>(null);
+
+  // Handler for when pins are clicked (either from map or legend)
+  const handlePinClick = (pinId: number | null) => {
+    setActivePin(pinId);
+  };
+
   return (
     <section id="projekte" className="w-full h-[calc(100vh-70px)] relative">
       {/* Map Container */}
@@ -31,10 +39,12 @@ export default function Projekte() {
         <div className="absolute inset-0 bg-[#0E5640]/70" />
 
         {/* Project Pins Component */}
-        <ProjectPins pins={projectPins} />
+        <ProjectPins pins={projectPins} activePin={activePin} onPinClick={handlePinClick} />
 
-        {/* <NavButtons /> */}
-        <NavButtons secondaryButton="team" />
+        {/* Project Legend - positioned in bottom right */}
+        <div className="absolute top-1/2 -translate-y-1/2 left-8 z-30 hidden md:block">
+          <ProjectLegend pins={projectPins} activePin={activePin} onPinClick={handlePinClick} />
+        </div>
       </div>
     </section>
   );

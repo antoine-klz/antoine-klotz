@@ -21,9 +21,9 @@ export default function Kontakt() {
         </div>
       </div>
 
-      <div className="flex-1 px-4 md:px-6 lg:px-8 pt-10 md:pt-0 relative z-10 h-full">
-        <div className="mx-auto max-w-7xl h-full flex flex-col justify-center">
-          <h2 className="text-5xl font-satoshibold text-[#8AEA7C] mb-6">Kontakt</h2>
+      <div className="flex-1 px-4 md:px-6 lg:px-8 pt-10 md:pt-0 relative z-10 h-full ">
+        <div className="mx-auto max-w-7xl h-full flex flex-col pt-28 ">
+          <h2 className="text-5xl font-satoshibold text-[#8AEA7C] mb-6 ">Kontakt</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mt-8">
             <div>

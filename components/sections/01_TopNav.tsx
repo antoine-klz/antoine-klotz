@@ -76,7 +76,7 @@ export default function TopNavigation() {
     <header className="px-4 lg:px-6 h-[72px] flex items-center justify-center fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#0A4A35] via-[#0E5640] to-[#0D5038]">
       <div className="w-full max-w-7xl flex justify-between items-center">
         <button onClick={() => scrollToSection("hero")} className="flex items-center gap-2">
-          <Image src="/assets/logo-white.svg" alt="Robin Wood Logo" width={28} height={28} />
+          <Image src="/assets/logo-10.png" alt="Robin Wood Logo" width={28} height={28} />
           <span className="text-2xl text-white mt-0.5 font-satoshibold">Robin Wood</span>
         </button>
 

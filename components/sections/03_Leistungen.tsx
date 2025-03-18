@@ -7,8 +7,8 @@ import { services } from "@/data/Leistungen";
 export default function Leistungen() {
   return (
     <section id="leistungen" className="w-full min-h-[calc(100vh-70px)] py-16 px-4 relative">
-      <h2 className="text-4xl md:text-5xl text-[#8AEA7C] text-center font-satoshibold mb-3">Unsere Leistungen</h2>
-      <h3 className="text-lg md:text-xl text-white mb-10 text-center">Wir bieten Ihnen folgende Leistungen an:</h3>
+      <h2 className="text-4xl md:text-5xl  text-white text-center font-satoshibold mb-3">Unsere Leistungen</h2>
+      <h3 className="text-lg md:text-xl text-[#8AEA7C] mb-10 text-center">Wir bieten Ihnen folgende Leistungen an:</h3>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service) => (

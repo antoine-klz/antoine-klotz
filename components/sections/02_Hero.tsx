@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ValueCards from "@/components/ideas/ValueCards";
+import ValueCards from "@/components/ValueCards";
 import NavButtons from "@/components/NavButtons";
 
 export default function Hero() {
