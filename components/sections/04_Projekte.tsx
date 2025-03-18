@@ -2,9 +2,9 @@
 import React from "react";
 import Image from "next/image";
 import { projectPins } from "@/data/Projekte";
-import ActionButtons from "../ActionButtons";
+import NavButtons from "../NavButtons";
 import ProjectPins from "../ProjectPins";
-import StatsCounter from "../ideas/StatsCounter";
+import StatsCounter from "../StatsCounter";
 
 export default function Projekte() {
   return (
@@ -32,7 +32,9 @@ export default function Projekte() {
 
         {/* Project Pins Component */}
         <ProjectPins pins={projectPins} />
-        <ActionButtons secondaryButton="team" />
+
+        {/* <NavButtons /> */}
+        <NavButtons secondaryButton="team" />
       </div>
     </section>
   );

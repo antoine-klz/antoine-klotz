@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ActionButtons from "../ActionButtons";
+import NavButtons from "../NavButtons";
 import { teamMembers } from "@/data/Team";
 import { User } from "lucide-react";
 
@@ -29,7 +29,7 @@ export default function Team() {
           </div>
         ))}
       </div>
-      <ActionButtons secondaryButton="none" />
+      <NavButtons secondaryButton="none" />
     </section>
   );
 }

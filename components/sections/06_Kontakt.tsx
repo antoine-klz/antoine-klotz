@@ -52,7 +52,7 @@ export default function Kontakt() {
               <div className="relative hidden md:block">
                 <div className="absolute top-[90px] left-0 flex items-center">
                   <Image src="/assets/anchor-icon.svg" alt="Anchor Icon" width={30} height={30} className="opacity-90" />
-                  <span className="text-[#FDFF45] text-2xl ml-4 ">Im Norden zuhause</span>
+                  <span className="text-white text-2xl ml-4 ">Im Norden zuhause</span>
                 </div>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function Kontakt() {
                     className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8AEA7C] text-white placeholder-white/50"
                   ></textarea>
                 </div>
-                <button type="submit" className="bg-[#8AEA7C] text-[#0E5640] px-6 py-2 rounded-md hover:bg-[#7ad96d] transition-colors font-medium">
+                <button type="submit" className="bg-[#fdff45] text-[#144723] px-6 py-2 rounded-lg hover:bg-[#fdff45] transition-colors font-medium">
                   Nachricht senden
                 </button>
               </form>

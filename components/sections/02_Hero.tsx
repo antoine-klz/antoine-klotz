@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ValueCards from "@/components/ideas/ValueCards";
-import ActionButtons from "@/components/ActionButtons";
+import NavButtons from "@/components/NavButtons";
 
 export default function Hero() {
   return (
@@ -15,7 +15,7 @@ export default function Hero() {
           {/* Value Proposition */}
           <ValueCards iconSize={32} showDescription={true} />
           <div className="pt-8">
-            <ActionButtons secondaryButton="leistungen" />
+            <NavButtons secondaryButton="leistungen" />
           </div>
         </header>
       </div>

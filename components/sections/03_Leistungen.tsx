@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import ActionButtons from "@/components/ActionButtons";
+import NavButtons from "@/components/NavButtons";
 import { services } from "@/data/Leistungen";
 
 export default function Leistungen() {
@@ -25,7 +25,7 @@ export default function Leistungen() {
         ))}
       </div>
 
-      <ActionButtons secondaryButton="projekte" />
+      <NavButtons secondaryButton="projekte" />
     </section>
   );
 }
