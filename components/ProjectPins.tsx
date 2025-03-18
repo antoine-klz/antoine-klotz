@@ -14,7 +14,7 @@ export default function ProjectPins({ pins }: ProjectPinsProps) {
       {pins.map((pin) => (
         <div key={pin.id} className="absolute z-20" style={{ top: pin.top, left: pin.left }}>
           <button
-            className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center border-2 border-white shadow-lg transform hover:scale-110 transition-transform"
+            className="w-6 h-6 bg-[#F65009] rounded-full flex items-center justify-center border-2 border-white shadow-lg transform hover:scale-110 transition-transform"
             onClick={(e) => {
               e.stopPropagation();
               setActivePopover(activePopover === pin.id ? null : pin.id);

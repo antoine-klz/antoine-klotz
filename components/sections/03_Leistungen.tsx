@@ -1,12 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import ActionButtons from "@/components/ActionButtons";
 import { services } from "@/data/Leistungen";
 
 export default function Leistungen() {
-  const [activeService, setActiveService] = useState<number | null>(null);
-
   return (
     <section id="leistungen" className="w-full min-h-[calc(100vh-70px)] py-16 px-4 relative">
       <h2 className="text-4xl md:text-5xl text-[#8AEA7C] text-center font-satoshibold mb-3">Unsere Leistungen</h2>
@@ -16,11 +14,7 @@ export default function Leistungen() {
         {services.map((service) => (
           <div
             key={service.id}
-            className={`bg-white/5 backdrop-blur-sm rounded-xl p-6 transition-all duration-300 hover:bg-white/10 hover:shadow-lg hover:transform hover:scale-105 ${
-              activeService === service.id ? "ring-2 ring-[#8AEA7C]/50" : ""
-            }`}
-            onMouseEnter={() => setActiveService(service.id)}
-            onMouseLeave={() => setActiveService(null)}
+            className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-lg transition-all duration-300 hover:bg-white/15 hover:shadow-xl hover:transform hover:scale-105 hover:ring-2 hover:ring-[#8AEA7C]/50"
           >
             <div className="w-14 h-14 flex items-center justify-center rounded-xl mb-5" style={{ backgroundColor: `${service.color}20` }}>
               <service.icon size={28} style={{ color: service.color }} />

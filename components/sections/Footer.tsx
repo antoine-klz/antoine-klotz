@@ -1,8 +1,24 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useCallback } from "react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+
+  // Scroll to section function
+  const scrollToSection = useCallback((sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offsetTop = element.offsetTop;
+      const navHeight = 70; // Height of the navigation bar
+      window.scrollTo({
+        top: offsetTop - navHeight,
+        behavior: "smooth",
+      });
+    }
+  }, []);
 
   return (
     <footer className="bg-gradient-to-r from-[#0A4A35] via-[#0E5640] to-[#0D5038] text-white">
@@ -28,24 +44,29 @@ export default function Footer() {
                 <p className="text-lg font-satoshibold">Navigation</p>
                 <ul className="space-y-3">
                   <li>
-                    <Link href="/" className="text-gray-200 hover:text-[#8AEA7C] transition-colors">
+                    <button onClick={() => scrollToSection("hero")} className="text-gray-200 hover:text-[#8AEA7C] transition-colors">
                       Home
-                    </Link>
+                    </button>
                   </li>
                   <li>
-                    <Link href="/leistungen" className="text-gray-200 hover:text-[#8AEA7C] transition-colors">
+                    <button onClick={() => scrollToSection("leistungen")} className="text-gray-200 hover:text-[#8AEA7C] transition-colors">
                       Leistungen
-                    </Link>
+                    </button>
                   </li>
                   <li>
-                    <Link href="/team" className="text-gray-200 hover:text-[#8AEA7C] transition-colors">
+                    <button onClick={() => scrollToSection("projekte")} className="text-gray-200 hover:text-[#8AEA7C] transition-colors">
+                      Projekte
+                    </button>
+                  </li>
+                  <li>
+                    <button onClick={() => scrollToSection("team")} className="text-gray-200 hover:text-[#8AEA7C] transition-colors">
                       Team
-                    </Link>
+                    </button>
                   </li>
                   <li>
-                    <Link href="/kontakt" className="text-gray-200 hover:text-[#8AEA7C] transition-colors">
+                    <button onClick={() => scrollToSection("kontakt")} className="text-gray-200 hover:text-[#8AEA7C] transition-colors">
                       Kontakt
-                    </Link>
+                    </button>
                   </li>
                 </ul>
               </div>

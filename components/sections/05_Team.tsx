@@ -2,6 +2,7 @@
 import React from "react";
 import ActionButtons from "../ActionButtons";
 import { teamMembers } from "@/data/Team";
+import { User } from "lucide-react";
 
 export default function Team() {
   return (
@@ -13,16 +14,17 @@ export default function Team() {
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {teamMembers.map((member, index) => (
-          <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg flex flex-col md:flex-row h-auto md:h-[28rem]">
-            <div className="md:w-1/3 h-80 md:h-full bg-gray-100 flex items-center justify-center">
-              <svg className="w-32 h-32 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-              </svg>
+          <div
+            key={index}
+            className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/20 flex flex-col md:flex-row h-auto md:h-[28rem] transition-all duration-300 hover:bg-white/15 hover:shadow-xl hover:transform hover:scale-105 hover:ring-2 hover:ring-[#8AEA7C]/50"
+          >
+            <div className="md:w-1/3 h-80 md:h-full bg-gray-100/20 flex items-center justify-center">
+              <User size={128} className="text-white/80" />
             </div>
             <div className="md:w-2/3 p-6 flex flex-col justify-center">
-              <h3 className="text-2xl font-satoshibold text-[#0E5640] mb-2">{member.name}</h3>
-              <p className="text-gray-600 mb-4">{member.role}</p>
-              <p className="text-gray-700">{member.description}</p>
+              <h3 className="text-2xl font-satoshibold text-[#8AEA7C] mb-2">{member.name}</h3>
+              <p className="text-white/90 mb-4">{member.role}</p>
+              <p className="text-white/80">{member.description}</p>
             </div>
           </div>
         ))}
