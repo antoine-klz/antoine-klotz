@@ -72,10 +72,21 @@ const useAnimatedCounter = (end: number, duration: number = 2000) => {
   return { count, counterRef };
 };
 
-export default function StatsCounter({ stats = DEFAULT_STATS, isVisible = true, duration = 2000, textColor = "#fdff45" }: StatsCounterProps) {
-  // Create an animated counter for each stat
-  const counters = stats.map((stat) => useAnimatedCounter(stat.value, duration));
+// Individual stat counter component
+const StatCounter = ({ value, label, duration, textColor }: { value: number; label: string; duration: number; textColor: string }) => {
+  const { count, counterRef } = useAnimatedCounter(value, duration);
 
+  return (
+    <div className="text-center">
+      <div ref={counterRef} className="text-4xl font-bold mb-2 font-satoshibold" style={{ color: textColor }}>
+        {count}+
+      </div>
+      <div className="text-white">{label}</div>
+    </div>
+  );
+};
+
+export default function StatsCounter({ stats = DEFAULT_STATS, isVisible = true, duration = 2000, textColor = "#fdff45" }: StatsCounterProps) {
   return (
     <div
       className={`flex flex-wrap justify-center gap-8 mb-12 transition-all duration-1000 delay-700 ${
@@ -83,12 +94,7 @@ export default function StatsCounter({ stats = DEFAULT_STATS, isVisible = true, 
       }`}
     >
       {stats.map((stat, index) => (
-        <div key={index} className="text-center">
-          <div ref={counters[index].counterRef} className={`text-4xl font-bold mb-2 font-satoshibold`} style={{ color: textColor }}>
-            {counters[index].count}+
-          </div>
-          <div className="text-white/80">{stat.label}</div>
-        </div>
+        <StatCounter key={index} value={stat.value} label={stat.label} duration={duration} textColor={textColor} />
       ))}
     </div>
   );

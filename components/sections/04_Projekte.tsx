@@ -4,6 +4,7 @@ import Image from "next/image";
 import { projectPins } from "@/data/Projekte";
 import ActionButtons from "../ActionButtons";
 import ProjectPins from "../ProjectPins";
+import StatsCounter from "../ideas/StatsCounter";
 
 export default function Projekte() {
   return (
@@ -12,8 +13,8 @@ export default function Projekte() {
       <div className="relative w-full h-full">
         {/* Headers */}
         <div className="absolute top-12 left-0 right-0 z-20">
-          <h2 className="text-4xl md:text-5xl text-white text-center font-satoshibold mb-3">Unsere Projekte</h2>
-          <h3 className="text-lg md:text-xl text-white mb-10 text-center">Folgende Projekte haben wir bereits durchgeführt:</h3>
+          <h2 className="text-4xl md:text-5xl text-white text-center font-satoshibold mb-6">Unsere Projekte</h2>
+          <StatsCounter textColor="#8AEA7C" />
         </div>
 
         <Image

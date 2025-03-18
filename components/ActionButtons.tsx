@@ -2,10 +2,10 @@
 
 import { Button } from "@/components/ui/button";
 
-type SecondaryButtonOption = "leistungen" | "team" | "projekte";
+type SecondaryButtonOption = "leistungen" | "team" | "projekte" | "none";
 
 interface ActionButtonsProps {
-  secondaryButton: SecondaryButtonOption;
+  secondaryButton?: SecondaryButtonOption;
 }
 
 export default function ActionButtons({ secondaryButton = "leistungen" }: ActionButtonsProps) {
@@ -21,6 +21,10 @@ export default function ActionButtons({ secondaryButton = "leistungen" }: Action
     projekte: {
       text: "Projekte ansehen",
       sectionId: "projekte",
+    },
+    none: {
+      text: "",
+      sectionId: "",
     },
   };
 
@@ -45,15 +49,17 @@ export default function ActionButtons({ secondaryButton = "leistungen" }: Action
       {/* Buttons Container */}
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         {/* Secondary Button - Customizable */}
-        <Button
-          variant="outline"
-          size="lg"
-          className="rounded-full px-10 py-7 text-xl font-semibold border-2 border-white/80 text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 shadow-[0_0_15px_rgba(255,255,255,0.2)] hover:shadow-[0_0_25px_rgba(255,255,255,0.4)]"
-          onClick={() => scrollToSection(sectionId)}
-          aria-label={`Zu ${text} scrollen`}
-        >
-          {text}
-        </Button>
+        {secondaryButton !== "none" && (
+          <Button
+            variant="outline"
+            size="lg"
+            className="rounded-full px-10 py-7 text-xl font-semibold border-2 border-white/80 text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 shadow-[0_0_15px_rgba(255,255,255,0.2)] hover:shadow-[0_0_25px_rgba(255,255,255,0.4)]"
+            onClick={() => scrollToSection(sectionId)}
+            aria-label={`Zu ${text} scrollen`}
+          >
+            {text}
+          </Button>
+        )}
 
         {/* Contact Button - Primary */}
         <Button
