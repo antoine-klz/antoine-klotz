@@ -21,7 +21,7 @@ export default function Projekte() {
       <div className="relative w-full h-full">
         {/* Headers - adjusted for better mobile display */}
         <div className="absolute top-12 left-0 right-0 z-20 px-4 md:px-0">
-          <h2 className="text-3xl md:text-5xl text-white text-center font-satoshibold mb-4 md:mb-6">Unsere Projekte</h2>
+          <h2 className="text-3xl md:text-5xl text-white text-center font-satoshibold mb-4">Unsere Projekte</h2>
           <StatsCounter textColor="#8AEA7C" />
         </div>
 
