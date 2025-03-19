@@ -3,32 +3,15 @@ import Image from "next/image";
 
 export default function Kontakt() {
   return (
-    <section id="kontakt" className="w-full min-h-[calc(100vh-65px)] relative overflow-hidden bg-[#0E5640]">
-      {/* Background Image - Hamburg Map */}
-      <div className="absolute bottom-0 right-0 w-2/3 md:w-1/2 h-full opacity-40">
-        <div className="relative w-full h-full">
-          <Image
-            src="/assets/contact-map.png"
-            alt="Inverted Map of Hamburg"
-            fill
-            sizes="(max-width: 768px) 66vw, 50vw"
-            quality={100}
-            loading="lazy"
-            style={{
-              objectFit: "cover",
-              objectPosition: "center right",
-              filter: "brightness(0.7) saturate(0.6)",
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#0E5640]" />
-        </div>
-      </div>
+    <section id="kontakt" className="w-full min-h-[calc(100vh-65px)] relative bg-[#0E5640] ">
+      <div className="flex-1 px-4 md:px-6 lg:px-8 pt-10 relative z-10 h-full md:pt-24 ">
+        <div className="mx-auto max-w-6xl h-full flex flex-col ">
+          <h2 className="text-5xl font-satoshibold text-[#8AEA7C] mb-6">Kontakt</h2>
+          <p className="text-white/90 md:w-1/2 mb-8">
+            Wir freuen uns, von Ihnen zu hören. Bitte füllen Sie das Formular aus oder kontaktieren Sie uns über die unten stehenden Informationen.
+          </p>
 
-      <div className="flex-1 px-4 md:px-6 lg:px-8 pt-10 relative z-10 h-full md:pt-28">
-        <div className="mx-auto max-w-6xl h-full flex flex-col">
-          <h2 className="text-5xl font-satoshibold text-[#8AEA7C] mb-6 ">Kontakt</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12">
             {/* Contact Form - First on mobile, second on desktop */}
             <div className="md:order-2 order-1">
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-md border border-white/20 mb-10 md:mb-0">
@@ -71,12 +54,8 @@ export default function Kontakt() {
             </div>
 
             {/* Contact Info - Second on mobile, first on desktop */}
-            <div className="md:order-1 order-2">
-              <p className="mb-6 text-white/90">
-                Wir freuen uns, von Ihnen zu hören. Bitte füllen Sie das Formular aus oder kontaktieren Sie uns über die unten stehenden
-                Informationen.
-              </p>
-
+            <div className="md:order-1 order-2 flex flex-col">
+              <p className="text-white/90 mb-8 text-2xl font-satoshibold">Kontaktinformationen</p>
               {/* Contact Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
                 {/* Email Card */}
@@ -141,6 +120,25 @@ export default function Kontakt() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      {/* Background Image - Hamburg Map */}
+      <div className="absolute bottom-0 right-0 w-2/3 md:w-1/2 h-full opacity-40">
+        <div className="relative w-full h-full">
+          <Image
+            src="/assets/contact-map.png"
+            alt="Inverted Map of Hamburg"
+            fill
+            sizes="(max-width: 768px) 66vw, 50vw"
+            quality={100}
+            loading="lazy"
+            style={{
+              objectFit: "cover",
+              objectPosition: "center right",
+              filter: "brightness(0.7) saturate(0.6)",
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#0E5640]" />
         </div>
       </div>
     </section>

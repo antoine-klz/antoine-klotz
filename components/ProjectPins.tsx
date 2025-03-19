@@ -47,7 +47,7 @@ export default function ProjectPins({ pins, activePin, onPinClick }: ProjectPins
 
           {/* Popover */}
           {activePopover === pin.id && (
-            <div className="absolute z-100 bg-white text-black rounded-md shadow-xl p-4 w-64 -translate-x-1/2 mt-2">
+            <div className="absolute z-100 bg-white text-black rounded-xl shadow-xl p-4 w-64 -translate-x-1/2 mt-2">
               <h4 className="font-bold text-lg text-[#0E5640]">{pin.name}</h4>
               <p className="text-sm mt-1">{pin.address}</p>
               <p className="text-sm font-medium mt-2">Jahr: {pin.year}</p>

@@ -20,7 +20,7 @@ export default function Projekte() {
       {/* Map Container */}
       <div className="relative w-full h-full">
         {/* Headers - adjusted for better mobile display */}
-        <div className="absolute top-16 md:top-12 left-0 right-0 z-20 px-4 md:px-0">
+        <div className="absolute top-12 left-0 right-0 z-20 px-4 md:px-0">
           <h2 className="text-3xl md:text-5xl text-white text-center font-satoshibold mb-4 md:mb-6">Unsere Projekte</h2>
           <StatsCounter textColor="#8AEA7C" />
         </div>
@@ -47,7 +47,7 @@ export default function Projekte() {
         {/* Project Pins Component - visible on all devices */}
         <ProjectPins pins={projectPins} activePin={activePin} onPinClick={handlePinClick} />
 
-        {/* Project Legend - only visible on desktop */}
+        {/* Project Legend - Only on desktop */}
         <div className="absolute top-1/2 -translate-y-1/2 left-8 z-30 hidden md:block">
           <ProjectLegend pins={projectPins} activePin={activePin} onPinClick={handlePinClick} />
         </div>

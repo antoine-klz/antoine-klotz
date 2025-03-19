@@ -78,7 +78,7 @@ const StatCounter = ({ value, label, duration, textColor }: { value: number; lab
 
   return (
     <div className="text-center">
-      <div ref={counterRef} className="text-4xl font-bold mb-2 font-satoshibold" style={{ color: textColor }}>
+      <div ref={counterRef} className="text-lg md:text-4xl font-bold mb-2 font-satoshibold" style={{ color: textColor }}>
         {count}+
       </div>
       <div className="text-white">{label}</div>
@@ -89,7 +89,7 @@ const StatCounter = ({ value, label, duration, textColor }: { value: number; lab
 export default function StatsCounter({ stats = DEFAULT_STATS, isVisible = true, duration = 2000, textColor = "#fdff45" }: StatsCounterProps) {
   return (
     <div
-      className={`flex flex-wrap justify-center gap-8 mb-12 transition-all duration-1000 delay-700 ${
+      className={`flex flex-wrap justify-center gap-6 md:gap-8 mb-12 transition-all duration-1000 delay-700 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
