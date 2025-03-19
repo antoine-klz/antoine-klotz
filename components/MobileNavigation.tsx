@@ -1,4 +1,5 @@
 import { Home, X, Menu } from "lucide-react";
+import { navItems } from "@/data/TopNav";
 
 interface MobileNavigationProps {
   mobileMenuOpen: boolean;
@@ -8,15 +9,6 @@ interface MobileNavigationProps {
 }
 
 export default function MobileNavigation({ mobileMenuOpen, setMobileMenuOpen, activeSection, scrollToSection }: MobileNavigationProps) {
-  // Navigation items with their respective section IDs
-  const navItems = [
-    { name: "Home", sectionId: "hero", icon: <Home size={16} /> },
-    { name: "Leistungen", sectionId: "leistungen" },
-    { name: "Projekte", sectionId: "projekte" },
-    { name: "Team", sectionId: "team" },
-    { name: "Kontakt", sectionId: "kontakt" },
-  ];
-
   return (
     <div className="md:hidden">
       {/* Burger Menu Button */}
@@ -46,7 +38,7 @@ export default function MobileNavigation({ mobileMenuOpen, setMobileMenuOpen, ac
                 }`}
                 onClick={() => scrollToSection(item.sectionId)}
               >
-                {item.icon && item.icon}
+                {item.icon === "Home" && <Home size={16} />}
                 {item.name}
               </button>
             );

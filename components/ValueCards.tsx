@@ -42,7 +42,7 @@ export default function ValueCards({ isVisible = true, layout = "grid", iconSize
 
   return (
     <ul
-      className={`grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-12 transition-all duration-1000 delay-500 ${
+      className={`grid grid-cols-2 md:grid-cols-3 gap-4 transition-all duration-1000 delay-500 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       aria-label="Unsere Kernwerte"
@@ -50,10 +50,10 @@ export default function ValueCards({ isVisible = true, layout = "grid", iconSize
       {values.map((value, index) => (
         <li
           key={index}
-          className="bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-6 transform transition-all duration-500 hover:scale-105 hover:bg-white/15 group"
+          className="bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-2 transform transition-all duration-500 hover:scale-105 hover:bg-white/15 group"
         >
-          <article className="flex flex-col items-center gap-3 sm:gap-4">
-            <div className="bg-[#8AEA7C]/20 p-3 sm:p-8 rounded-full group-hover:bg-[#8AEA7C]/30 transition-all duration-300" aria-hidden="true">
+          <article className="flex flex-col items-center gap-0">
+            <div className="bg-[#8AEA7C]/20 p-4 rounded-full group-hover:bg-[#8AEA7C]/30 transition-all duration-300" aria-hidden="true">
               <value.icon size={iconSize} className="text-[#8AEA7C]" aria-hidden="true" />
             </div>
             <h3 className="text-[#8AEA7C] text-lg sm:text-xl md:text-2xl font-medium font-satoshibold text-center">{value.title}</h3>

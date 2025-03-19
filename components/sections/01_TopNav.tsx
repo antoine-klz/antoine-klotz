@@ -1,9 +1,9 @@
 "use client";
-
 import { Home } from "lucide-react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import MobileNavigation from "../MobileNavigation";
+import { navItems } from "@/data/TopNav";
+import MobileNavigation from "@/components/MobileNavigation";
 
 export default function TopNavigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -64,20 +64,11 @@ export default function TopNavigation() {
     }
   };
 
-  // Navigation items with their respective section IDs
-  const navItems = [
-    { name: "Home", sectionId: "hero", icon: <Home size={16} /> },
-    { name: "Leistungen", sectionId: "leistungen" },
-    { name: "Projekte", sectionId: "projekte" },
-    { name: "Team", sectionId: "team" },
-    { name: "Kontakt", sectionId: "kontakt" },
-  ];
-
   return (
     <header className="px-4 lg:px-6 h-[72px] flex items-center justify-center fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#0A4A35] via-[#0E5640] to-[#0D5038]">
       <div className="w-full max-w-7xl flex justify-between items-center">
         <button onClick={() => scrollToSection("hero")} className="flex items-center gap-2">
-          <Image src="/assets/logo-10.png" alt="Robin Wood Logo" width={28} height={28} />
+          <Image src="/assets/logo.png" alt="Robin Wood Logo" width={28} height={28} />
           <span className="text-2xl text-white mt-0.5 font-satoshibold">Robin Wood</span>
         </button>
 
@@ -94,7 +85,7 @@ export default function TopNavigation() {
                   }`}
                   onClick={() => scrollToSection(item.sectionId)}
                 >
-                  {item.icon && item.icon}
+                  {item.icon === "Home" && <Home size={16} />}
                   {item.name}
                 </button>
               );
