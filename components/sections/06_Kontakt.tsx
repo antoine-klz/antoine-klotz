@@ -8,7 +8,7 @@ export default function Kontakt() {
       <div className="absolute bottom-0 right-0 w-2/3 md:w-1/2 h-full opacity-40">
         <div className="relative w-full h-full">
           <Image
-            src="/assets/invertedmapofhamburg.png"
+            src="/assets/contact-map.png"
             alt="Inverted Map of Hamburg"
             fill
             sizes="(max-width: 768px) 66vw, 50vw"

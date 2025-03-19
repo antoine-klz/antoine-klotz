@@ -28,7 +28,7 @@ export default function Projekte() {
         {/* Background Map Image */}
         <div className="relative w-full h-full overflow-hidden">
           <Image
-            src="/assets/newmap2.png"
+            src="/assets/project-map.png"
             alt="Map of Hamburg"
             fill
             sizes="100vw"
