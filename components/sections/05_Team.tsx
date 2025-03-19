@@ -21,8 +21,8 @@ export default function Team() {
               <User size={128} className="text-white/80" />
             </div>
             <div className="md:w-2/3 p-6 flex flex-col justify-center">
-              <h3 className="text-2xl font-satoshibold text-[#8AEA7C] mb-2">{member.name}</h3>
-              <p className="text-white/90 mb-4">{member.role}</p>
+              <h3 className="text-2xl font-satoshibold text-[#8AEA7C]">{member.name}</h3>
+              <p className="text-white/90 text-lg mb-4">{member.role}</p>
               <p className="text-white/80">{member.description}</p>
             </div>
           </div>

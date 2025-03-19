@@ -63,7 +63,7 @@ export default function Kontakt() {
                   href="https://wa.me/+491634286596"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gray/10 backdrop-blur-sm p-5 rounded-xl border border-white/20 flex flex-col items-center text-center hover:bg-white/15 transition-colors cursor-pointer"
+                  className="bg-white/5 backdrop-blur-sm p-5 rounded-xl border border-white/20 flex flex-col items-center text-center hover:bg-white/15 transition-colors cursor-pointer"
                 >
                   <div className="w-12 h-12 rounded-full bg-[#8AEA7C]/20 flex items-center justify-center mb-3">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#8AEA7C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -82,7 +82,7 @@ export default function Kontakt() {
                 {/* Email Card */}
                 <a
                   href="mailto:info@robinwood.com"
-                  className="bg-gray/10 backdrop-blur-sm p-5 rounded-xl border border-white/20 flex flex-col items-center text-center hover:bg-white/15 transition-colors cursor-pointer"
+                  className="bg-white/5 backdrop-blur-sm p-5 rounded-xl border border-white/20 flex flex-col items-center text-center hover:bg-white/15 transition-colors cursor-pointer"
                 >
                   <div className="w-12 h-12 rounded-full bg-[#8AEA7C]/20 flex items-center justify-center mb-3">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#8AEA7C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -101,7 +101,7 @@ export default function Kontakt() {
                 {/* Phone Card */}
                 <a
                   href="tel:+555-123-4567"
-                  className="bg-gray/10 backdrop-blur-sm p-5 rounded-xl border border-white/20 flex flex-col items-center text-center hover:bg-white/15 transition-colors cursor-pointer"
+                  className="bg-white/5 backdrop-blur-sm p-5 rounded-xl border border-white/20 flex flex-col items-center text-center hover:bg-white/15 transition-colors cursor-pointer"
                 >
                   <div className="w-12 h-12 rounded-full bg-[#8AEA7C]/20 flex items-center justify-center mb-3">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#8AEA7C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
