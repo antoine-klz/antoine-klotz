@@ -4,22 +4,7 @@ import NavButtons from "@/components/NavButtons";
 
 export default function Hero() {
   return (
-    <section id="hero" className="w-full h-[calc(100vh-70px)] relative flex items-center justify-center mt-[72px]" aria-label="Hero section">
-      {/* Content Container */}
-      <div className="container px-4 md:px-6 w-full max-w-8xl z-10 py-12 md:py-0">
-        <header className="text-center max-w-4xl mx-auto">
-          <h1 className="text-7xl md:text-8xl lg:text-[115px] font-bold tracking-tighter text-white mb-6 font-satoshibold">Robin Wood</h1>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-white/90 mb-10 font-satoshi">
-            Ihr Experte für nachhaltigen Baumschutz auf Baustellen im Norden.
-          </h2>
-          {/* Value Proposition */}
-          <ValueCards iconSize={32} showDescription={true} />
-          <div className="pt-8">
-            <NavButtons secondaryButton="leistungen" />
-          </div>
-        </header>
-      </div>
-
+    <section id="hero" className="w-full min-h-[calc(100vh-70px)] relative flex mt-[72px] py-12 md:py-0" aria-label="Hero section">
       {/* Hero Image with Overlay */}
       <Image
         src="/assets/hero-image.png"
@@ -33,6 +18,30 @@ export default function Hero() {
         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAEtAJJXIDTjwAAAABJRU5ErkJggg=="
       />
       <div className="absolute inset-0 bg-black bg-opacity-70 z-[1]"></div>
+
+      {/* Content Container */}
+      <div className="container px-4 md:px-6 w-full max-w-8xl z-10 relative">
+        <header className="text-center max-w-4xl mx-auto">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[115px] font-bold tracking-tighter text-white mb-4 md:mb-6 font-satoshibold">
+            Robin Wood
+          </h1>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white/90 mb-6 md:mb-10 font-satoshi">
+            Ihr Experte für nachhaltigen Baumschutz auf Baustellen im Norden.
+          </h2>
+
+          {/* Value Proposition - smaller on mobile with no description */}
+          <div className="hidden md:block">
+            <ValueCards iconSize={32} showDescription={true} />
+          </div>
+          <div className="md:hidden">
+            <ValueCards iconSize={24} showDescription={false} />
+          </div>
+        </header>
+      </div>
+
+      <div className="absolute bottom-16 left-0 right-0 pt-6 md:pt-8 px-4 z-10">
+        <NavButtons secondaryButton="leistungen" />
+      </div>
     </section>
   );
 }
