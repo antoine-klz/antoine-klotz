@@ -25,7 +25,7 @@ export default function Leistungen() {
         ))}
       </div>
 
-      <div className="absolute bottom-16 left-0 right-0 pt-6 md:pt-8 px-4 z-10">
+      <div className="absolute bottom-8 md:bottom-20 left-0 right-0 pt-6 md:pt-8 px-4 z-10">
         <NavButtons secondaryButton="projekte" />
       </div>
     </section>
