@@ -23,11 +23,11 @@ export default function Hero() {
       />
       <div className="absolute inset-0 bg-black bg-opacity-70 z-[1]"></div>
 
-      {/* Content Container with max-height to prevent overflow */}
-      <div className="container px-4 md:px-6 w-full max-w-8xl z-10 relative flex flex-col h-full max-h-[calc(100vh-70px)]">
-        <div className="flex-grow flex flex-col justify-center">
-          <header className="text-center max-w-4xl mx-auto pt-0 md:pt-16 flex-shrink-0">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[115px] font-bold tracking-tighter text-white mb-4 md:mb-6 font-satoshibold hidden md:block">
+      {/* Content Container - centered vertically with flex */}
+      <div className="container px-4 md:px-6 w-full max-w-8xl z-10 relative flex flex-col justify-center items-center h-full">
+        <div className="w-full flex flex-col items-center">
+          <header className="text-center max-w-4xl mx-auto">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[115px] font-bold tracking-tighter text-white mb-4 md:mb-6 font-satoshibold hidden sm:block">
               Robin Wood
             </h1>
             <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white/90 mb-6 md:mb-8 md:font-satoshi font-satoshibold">
@@ -42,11 +42,11 @@ export default function Hero() {
               <ValueCards iconSize={24} showDescription={true} />
             </div>
           </header>
-        </div>
 
-        {/* Nav Buttons */}
-        <div className="flex-shrink-0 z-10 px-2 md:mb-8 mt-8">
-          <NavButtons secondaryButton="leistungen" />
+          {/* Nav Buttons */}
+          <div className="mt-8 md:mt-16 w-full px-2 md:mb-8">
+            <NavButtons secondaryButton="leistungen" />
+          </div>
         </div>
       </div>
     </section>
