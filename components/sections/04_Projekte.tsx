@@ -30,8 +30,9 @@ export default function Projekte() {
           <Image
             src="/assets/newmap2.png"
             alt="Map of Hamburg"
-            width={2000}
-            height={2000}
+            fill
+            sizes="100vw"
+            quality={75}
             style={{
               objectFit: "cover",
               objectPosition: "center",

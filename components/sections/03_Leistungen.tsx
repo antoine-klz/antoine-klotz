@@ -20,7 +20,7 @@ export default function Leistungen() {
                 <service.icon size={28} style={{ color: service.color }} />
               </div>
               <h3 className="text-lg font-medium text-white mb-3">{service.title}</h3>
-              <p className="text-white/70 text-base leading-relaxed">{service.description}</p>
+              <p className="text-white text-base leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>
