@@ -2,12 +2,14 @@
 import { Button } from "@/components/ui/button";
 
 type SecondaryButtonOption = "leistungen" | "team" | "projekte" | "none";
+type ColorMode = "dark" | "light";
 
 interface ActionButtonsProps {
   secondaryButton?: SecondaryButtonOption;
+  colorMode?: ColorMode;
 }
 
-export default function ActionButtons({ secondaryButton = "leistungen" }: ActionButtonsProps) {
+export default function ActionButtons({ secondaryButton = "leistungen", colorMode = "dark" }: ActionButtonsProps) {
   const secondaryButtonConfig = {
     leistungen: {
       text: "Unsere Leistungen",
@@ -28,6 +30,12 @@ export default function ActionButtons({ secondaryButton = "leistungen" }: Action
   };
 
   const { text, sectionId } = secondaryButtonConfig[secondaryButton];
+
+  const secondaryButtonStyles = {
+    dark: "rounded-full px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-6 text-base sm:text-lg md:text-xl font-semibold border-2 border-white/80 text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 shadow-[0_0_15px_rgba(255,255,255,0.2)] hover:shadow-[0_0_25px_rgba(255,255,255,0.4)]",
+    light:
+      "rounded-full px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-6 text-base sm:text-lg md:text-xl font-semibold border-2 border-[#0E5640]/80 text-[#0E5640] bg-[#0E5640]/5 hover:bg-[#0E5640]/10 transition-all duration-300 shadow-[0_0_15px_rgba(14,86,64,0.1)] hover:shadow-[0_0_25px_rgba(14,86,64,0.2)]",
+  };
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -52,7 +60,7 @@ export default function ActionButtons({ secondaryButton = "leistungen" }: Action
           <Button
             variant="outline"
             size="lg"
-            className="rounded-full px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-6 text-base sm:text-lg md:text-xl font-semibold border-2 border-white/80 text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 shadow-[0_0_15px_rgba(255,255,255,0.2)] hover:shadow-[0_0_25px_rgba(255,255,255,0.4)]"
+            className={secondaryButtonStyles[colorMode]}
             onClick={() => scrollToSection(sectionId)}
             aria-label={`Zu ${text} scrollen`}
           >

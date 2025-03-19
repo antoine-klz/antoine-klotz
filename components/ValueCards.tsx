@@ -56,7 +56,7 @@ export default function ValueCards({ isVisible = true, layout = "grid", iconSize
             <div className="bg-[#8AEA7C]/20 p-2 sm:p-4 rounded-full group-hover:bg-[#8AEA7C]/30 transition-all duration-300" aria-hidden="true">
               <value.icon size={iconSize} className="text-[#8AEA7C]" aria-hidden="true" />
             </div>
-            <h3 className="text-[#8AEA7C] text-lg sm:text-xl md:text-2xl font-medium font-satoshibold text-center">{value.title}</h3>
+            <h3 className="text-[#8AEA7C] text-lg sm:text-xl md:text-2xl font-medium font-satoshibold text-center mb-2">{value.title}</h3>
             {showDescription && <p className="text-white text-sm sm:text-md text-center">{value.description}</p>}
           </article>
         </li>

@@ -21,7 +21,7 @@ export const services: Service[] = [
     title: "Ökologische Baubegleitung",
     description: "Umweltfreundliche Begleitung Ihres Bauprojekts mit Fokus auf Nachhaltigkeit und Naturschutz.",
     icon: Leaf,
-    color: "#fdff45",
+    color: "#8AEA7C",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ export const services: Service[] = [
     title: "Dokumentation",
     description: "Umfassende Dokumentation aller Maßnahmen für Behörden und Qualitätssicherung.",
     icon: FileCheck,
-    color: "#fdff45",
+    color: "#8AEA7C",
   },
   {
     id: 5,
@@ -49,6 +49,6 @@ export const services: Service[] = [
     title: "Beratung & Schulung",
     description: "Fachliche Beratung und Schulung für Ihr Team zu allen Aspekten des Baumschutzes.",
     icon: Users,
-    color: "#fdff45",
+    color: "#8AEA7C",
   },
 ];

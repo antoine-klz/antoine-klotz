@@ -58,8 +58,32 @@ export default function Kontakt() {
               <p className="text-white/90 mb-8 text-2xl font-satoshibold">Kontaktinformationen</p>
               {/* Contact Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+                {/* WhatsApp Card */}
+                <a
+                  href="https://wa.me/+491634286596"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white/10 backdrop-blur-sm p-5 rounded-xl border border-white/20 flex flex-col items-center text-center hover:bg-white/15 transition-colors cursor-pointer"
+                >
+                  <div className="w-12 h-12 rounded-full bg-[#8AEA7C]/20 flex items-center justify-center mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#8AEA7C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-medium text-[#8AEA7C] mb-2">WhatsApp</h3>
+                  <p className="text-white/90 text-sm">Chat mit uns</p>
+                </a>
+
                 {/* Email Card */}
-                <div className="bg-white/10 backdrop-blur-sm p-5 rounded-xl border border-white/20 flex flex-col items-center text-center hover:bg-white/15 transition-colors">
+                <a
+                  href="mailto:info@robinwood.com"
+                  className="bg-white/10 backdrop-blur-sm p-5 rounded-xl border border-white/20 flex flex-col items-center text-center hover:bg-white/15 transition-colors cursor-pointer"
+                >
                   <div className="w-12 h-12 rounded-full bg-[#8AEA7C]/20 flex items-center justify-center mb-3">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#8AEA7C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path
@@ -70,12 +94,15 @@ export default function Kontakt() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium text-[#8AEA7C] mb-1">E-Mail</h3>
-                  <p className="text-white/90">info@robinwood.com</p>
-                </div>
+                  <h3 className="text-lg font-medium text-[#8AEA7C] mb-2">E-Mail</h3>
+                  <p className="text-white/90 text-sm">info@robinwood.com</p>
+                </a>
 
                 {/* Phone Card */}
-                <div className="bg-white/10 backdrop-blur-sm p-5 rounded-xl border border-white/20 flex flex-col items-center text-center hover:bg-white/15 transition-colors">
+                <a
+                  href="tel:+555-123-4567"
+                  className="bg-white/10 backdrop-blur-sm p-5 rounded-xl border border-white/20 flex flex-col items-center text-center hover:bg-white/15 transition-colors cursor-pointer"
+                >
                   <div className="w-12 h-12 rounded-full bg-[#8AEA7C]/20 flex items-center justify-center mb-3">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#8AEA7C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path
@@ -86,30 +113,9 @@ export default function Kontakt() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium text-[#8AEA7C] mb-1">Telefon</h3>
-                  <p className="text-white/90">(555) 123-4567</p>
-                </div>
-
-                {/* Address Card */}
-                <div className="bg-white/10 backdrop-blur-sm p-5 rounded-xl border border-white/20 flex flex-col items-center text-center hover:bg-white/15 transition-colors">
-                  <div className="w-12 h-12 rounded-full bg-[#8AEA7C]/20 flex items-center justify-center mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#8AEA7C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                      />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-lg font-medium text-[#8AEA7C] mb-1">Adresse</h3>
-                  <p className="text-white/90">
-                    123 Waldweg
-                    <br />
-                    Grünstadt, 95947
-                  </p>
-                </div>
+                  <h3 className="text-lg font-medium text-[#8AEA7C] mb-2">Telefon</h3>
+                  <p className="text-white/90 text-sm">(555) 123-4567</p>
+                </a>
               </div>
 
               <div className="relative hidden md:block">
