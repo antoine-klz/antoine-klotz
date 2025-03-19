@@ -14,7 +14,7 @@ export default function Leistungen() {
           {services.map((service) => (
             <div
               key={service.id}
-              className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 shadow-lg transition-all duration-300 hover:bg-white/15 hover:shadow-xl hover:ring-2 hover:ring-[#8AEA7C]/50 flex flex-col justify-between h-full"
+              className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/20 shadow-lg transition-all duration-300 hover:bg-white/15 hover:shadow-xl hover:ring-2 hover:ring-[#8AEA7C]/50 flex flex-col justify-between h-full"
             >
               <div>
                 <div className="w-14 h-14 flex items-center justify-center rounded-xl mb-5" style={{ backgroundColor: `${service.color}20` }}>
