@@ -20,8 +20,8 @@ export default function Leistungen() {
                 <div className="w-14 h-14 flex items-center justify-center rounded-xl mb-5" style={{ backgroundColor: `${service.color}20` }}>
                   <service.icon size={28} style={{ color: service.color }} />
                 </div>
-                <h3 className="text-lg font-medium text-white mb-3">{service.title}</h3>
-                <p className="text-white text-base leading-relaxed">{service.description}</p>
+                <h3 className="text-xl text-white mb-3 font-satoshibold">{service.title}</h3>
+                <p className="text-gray-200 text-md leading-relaxed">{service.description}</p>
               </div>
             </div>
           ))}
