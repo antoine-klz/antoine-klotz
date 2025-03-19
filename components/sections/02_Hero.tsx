@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black bg-opacity-70 z-[1]"></div>
 
       {/* Content Container */}
-      <div className="container px-4 md:px-6 w-full max-w-8xl z-10 relative">
+      <div className="container px-4 md:px-6 w-full max-w-8xl z-10 relative md:pt-28">
         <header className="text-center max-w-4xl mx-auto">
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[115px] font-bold tracking-tighter text-white mb-4 md:mb-6 font-satoshibold">
             Robin Wood
@@ -34,12 +34,12 @@ export default function Hero() {
             <ValueCards iconSize={32} showDescription={true} />
           </div>
           <div className="md:hidden">
-            <ValueCards iconSize={24} showDescription={false} />
+            <ValueCards iconSize={24} showDescription={true} />
           </div>
         </header>
       </div>
 
-      <div className="absolute bottom-16 left-0 right-0 pt-6 md:pt-8 px-4 z-10">
+      <div className="absolute bottom-8 left-0 right-0 pt-6 md:pt-8 px-4 z-10">
         <NavButtons secondaryButton="leistungen" />
       </div>
     </section>
