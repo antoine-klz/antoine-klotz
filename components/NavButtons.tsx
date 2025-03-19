@@ -33,7 +33,7 @@ export default function ActionButtons({ secondaryButton = "leistungen" }: Action
     const element = document.getElementById(sectionId);
     if (element) {
       // Get the height of the topnav (assuming it's 70px based on section's calc)
-      const topnavHeight = 70;
+      const topnavHeight = 65;
       const offsetTop = element.offsetTop - topnavHeight;
 
       window.scrollTo({

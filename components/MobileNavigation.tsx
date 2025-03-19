@@ -25,7 +25,7 @@ export default function MobileNavigation({ mobileMenuOpen, setMobileMenuOpen, ac
         className={`fixed inset-0 transition-all duration-500 ease-in-out ${
           mobileMenuOpen ? "translate-x-0" : "translate-x-full pointer-events-none"
         } bg-[#0E5640] z-40`}
-        style={{ top: "72px" }} // Positioned right below the header
+        style={{ top: "65px" }} // Positioned right below the header
       >
         <div className="flex flex-col items-center justify-start pt-10 h-full">
           {navItems.map((item) => {
