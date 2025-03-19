@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Kontakt() {
   return (
-    <section id="kontakt" className="w-full min-h-[calc(100vh-72px)] relative overflow-hidden bg-[#0E5640]">
+    <section id="kontakt" className="w-full min-h-[calc(100vh-65px)] relative overflow-hidden bg-[#0E5640]">
       {/* Background Image - Hamburg Map */}
       <div className="absolute bottom-0 right-0 w-2/3 md:w-1/2 h-full opacity-40">
         <div className="relative w-full h-full">
