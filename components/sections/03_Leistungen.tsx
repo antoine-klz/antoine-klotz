@@ -10,7 +10,7 @@ export default function Leistungen() {
       <h2 className="text-4xl md:text-5xl  text-white text-center font-satoshibold mb-3">Unsere Leistungen</h2>
       <h3 className="text-lg md:text-xl text-[#8AEA7C] mb-10 text-center">Wir bieten Ihnen folgende Leistungen an:</h3>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-36">
         {services.map((service) => (
           <div
             key={service.id}
@@ -25,7 +25,9 @@ export default function Leistungen() {
         ))}
       </div>
 
-      <NavButtons secondaryButton="projekte" />
+      <div className="absolute bottom-16 left-0 right-0 pt-6 md:pt-8 px-4 z-10">
+        <NavButtons secondaryButton="projekte" />
+      </div>
     </section>
   );
 }
