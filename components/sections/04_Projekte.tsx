@@ -32,7 +32,7 @@ export default function Projekte() {
             alt="Map of Hamburg"
             fill
             sizes="100vw"
-            quality={75}
+            quality={60}
             style={{
               objectFit: "cover",
               objectPosition: "center",

@@ -11,6 +11,9 @@ export default function Kontakt() {
             src="/assets/invertedmapofhamburg.png"
             alt="Inverted Map of Hamburg"
             fill
+            sizes="(max-width: 768px) 66vw, 50vw"
+            quality={60}
+            loading="lazy"
             style={{
               objectFit: "cover",
               objectPosition: "center right",
