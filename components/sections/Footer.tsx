@@ -22,7 +22,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gradient-to-r from-[#0A4A35] via-[#0E5640] to-[#0D5038] text-white">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Main Footer Content */}
         <div className="py-12 px-8 md:px-0 border-b border-[#1A6A55]">
           <div className="flex flex-col md:flex-row justify-between gap-12">

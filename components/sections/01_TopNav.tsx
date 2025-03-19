@@ -14,7 +14,7 @@ export default function TopNavigation() {
     const handleScroll = () => {
       // Track active section
       const sections = ["hero", "leistungen", "projekte", "team", "kontakt"];
-      const navHeight = 72; // Height of the navigation bar
+      const navHeight = 65; // Height of the navigation bar
       const scrollPosition = window.scrollY + navHeight; // Use nav height for better detection
 
       for (const section of sections) {
@@ -56,7 +56,7 @@ export default function TopNavigation() {
     const element = document.getElementById(sectionId);
     if (element) {
       const offsetTop = element.offsetTop;
-      const navHeight = 70; // Height of the navigation bar
+      const navHeight = 65; // Height of the navigation bar
       window.scrollTo({
         top: offsetTop - navHeight,
         behavior: "smooth",
@@ -65,8 +65,8 @@ export default function TopNavigation() {
   };
 
   return (
-    <header className="px-4 lg:px-6 h-[72px] flex items-center justify-center fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#0A4A35] via-[#0E5640] to-[#0D5038]">
-      <div className="w-full max-w-7xl flex justify-between items-center">
+    <header className="px-4 lg:px-6 h-[65px] flex items-center justify-center fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#0A4A35] via-[#0E5640] to-[#0D5038]">
+      <div className="w-full max-w-6xl flex justify-between items-center">
         <button onClick={() => scrollToSection("hero")} className="flex items-center gap-2">
           <Image src="/assets/logo.png" alt="Robin Wood Logo" width={28} height={28} />
           <span className="text-2xl text-white mt-0.5 font-satoshibold">Robin Wood</span>
@@ -80,7 +80,7 @@ export default function TopNavigation() {
               return (
                 <button
                   key={item.name}
-                  className={`text-md px-4 py-2 rounded-full transition-colors flex items-center gap-1.5 font-satoshibold ${
+                  className={`text-md px-4 py-1.5 rounded-full transition-colors flex items-center gap-1.5 font-satoshibold ${
                     isActive ? "bg-[#8AEA7C] text-[#144723]" : "text-[#144723] hover:bg-gray-100"
                   }`}
                   onClick={() => scrollToSection(item.sectionId)}

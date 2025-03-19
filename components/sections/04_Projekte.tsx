@@ -16,7 +16,7 @@ export default function Projekte() {
   };
 
   return (
-    <section id="projekte" className="w-full h-[calc(100vh-70px)] relative">
+    <section id="projekte" className="w-full h-[calc(100vh-65px)] relative">
       {/* Map Container */}
       <div className="relative w-full h-full">
         {/* Headers - adjusted for better mobile display */}
