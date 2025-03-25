@@ -1,13 +1,12 @@
 import React from "react";
-import Image from "next/image";
 
 export default function Kontakt() {
   return (
-    <section id="kontakt" className="w-full min-h-[calc(100vh-65px)] relative bg-[#0E5640] ">
+    <section id="kontakt" className="w-full min-h-[calc(100vh-65px)] relative bg-white ">
       <div className="flex-1 px-4 md:px-6 lg:px-8 pt-10 relative z-10 h-full md:pt-24 ">
         <div className="mx-auto max-w-6xl h-full flex flex-col ">
-          <h2 className="text-5xl font-satoshibold text-[#8AEA7C] mb-6">Kontakt</h2>
-          <p className="text-white/90 md:w-1/2 mb-8">
+          <h2 className="text-5xl font-satoshibold text-black mb-6">Kontakt</h2>
+          <p className="text-black/90 md:w-1/2 mb-8">
             Wir freuen uns, von Ihnen zu hören. Bitte füllen Sie das Formular aus oder kontaktieren Sie uns über die unten stehenden Informationen.
           </p>
 
@@ -17,7 +16,7 @@ export default function Kontakt() {
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-md border border-white/20 mb-10 md:mb-0">
                 <form className="space-y-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-white mb-1">
+                    <label htmlFor="name" className="block text-sm font-medium text-black mb-1">
                       Name
                     </label>
                     <input
@@ -27,7 +26,7 @@ export default function Kontakt() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-white mb-1">
+                    <label htmlFor="email" className="block text-sm font-medium text-black mb-1">
                       E-Mail
                     </label>
                     <input
@@ -37,7 +36,7 @@ export default function Kontakt() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-white mb-1">
+                    <label htmlFor="message" className="block text-sm font-medium text-black mb-1">
                       Nachricht
                     </label>
                     <textarea
@@ -75,8 +74,8 @@ export default function Kontakt() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium text-[#8AEA7C] mb-2">WhatsApp</h3>
-                  <p className="text-white text-sm">Chat mit uns</p>
+                  <h3 className="text-lg font-medium text-black mb-2">WhatsApp</h3>
+                  <p className="text-black text-sm">Chat mit uns</p>
                 </a>
 
                 {/* Email Card */}
@@ -94,8 +93,8 @@ export default function Kontakt() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium text-[#8AEA7C] mb-2">E-Mail</h3>
-                  <p className="text-white text-sm">info@robinwood.com</p>
+                  <h3 className="text-lg font-medium text-black mb-2">E-Mail</h3>
+                  <p className="text-black text-sm">info@robinwood.com</p>
                 </a>
 
                 {/* Phone Card */}
@@ -113,38 +112,12 @@ export default function Kontakt() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium text-[#8AEA7C] mb-2">Telefon</h3>
-                  <p className="text-white text-sm">(555) 123-4567</p>
+                  <h3 className="text-lg font-medium text-black mb-2">Telefon</h3>
+                  <p className="text-black text-sm">(555) 123-4567</p>
                 </a>
-              </div>
-
-              <div className="relative hidden md:block">
-                <div className="absolute top-[90px] left-0 flex items-center">
-                  <Image src="/assets/anchor-icon.svg" alt="Anchor Icon" width={30} height={30} className="opacity-90" />
-                  <span className="text-white text-2xl ml-4 ">Im Norden zuhause</span>
-                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      {/* Background Image - Hamburg Map */}
-      <div className="absolute bottom-0 right-0 w-2/3 md:w-1/2 h-full opacity-40">
-        <div className="relative w-full h-full">
-          <Image
-            src="/assets/contact-map.png"
-            alt="Inverted Map of Hamburg"
-            fill
-            sizes="(max-width: 768px) 66vw, 50vw"
-            quality={100}
-            loading="lazy"
-            style={{
-              objectFit: "cover",
-              objectPosition: "center right",
-              filter: "brightness(0.7) saturate(0.6)",
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#0E5640]" />
         </div>
       </div>
     </section>

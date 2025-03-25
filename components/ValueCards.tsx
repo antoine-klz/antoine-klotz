@@ -12,18 +12,18 @@ export default function ValueCards({ isVisible = true, layout = "grid", iconSize
   const values = [
     {
       icon: Trees,
-      title: "Professionell",
-      description: "Baumschutz nach aktuellsten Industriestandards",
+      title: "Value 1",
+      description: "Value 1 Description",
     },
     {
       icon: Recycle,
-      title: "Nachhaltig",
-      description: "Umweltfreundliche Materialien und Methoden",
+      title: "Value 2",
+      description: "Value 2 Description",
     },
     {
       icon: Handshake,
-      title: "Zuverlässig",
-      description: "Termingerechte und sorgfältige Ausführung",
+      title: "Value 3",
+      description: "Value 3 Description",
     },
   ];
 
@@ -57,7 +57,7 @@ export default function ValueCards({ isVisible = true, layout = "grid", iconSize
               <value.icon size={iconSize} className="text-[#8AEA7C]" aria-hidden="true" />
             </div>
             <h3 className="text-[#8AEA7C] text-lg sm:text-xl md:text-2xl font-medium font-satoshibold text-center mb-2">{value.title}</h3>
-            {showDescription && <p className="text-white text-sm sm:text-md text-center">{value.description}</p>}
+            {showDescription && <p className="text-black text-sm sm:text-md text-center">{value.description}</p>}
           </article>
         </li>
       ))}

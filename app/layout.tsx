@@ -17,8 +17,8 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Robin Wood - Ihr Experte für nachhaltige Baumpflege in Hamburg",
-  description: "Robin Wood - Ihr Experte für nachhaltige Baumpflege in Hamburg",
+  title: "Website Title",
+  description: "Website Description",
   icons: {
     icon: "/assets/logo.png",
   },
@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${satoshi.variable} ${satoshiBold.variable} antialiased bg-[#0E5640]`}>
+      <body className={`${satoshi.variable} ${satoshiBold.variable} antialiased bg-white`}>
         <TopNav />
         {children}
         <Footer />

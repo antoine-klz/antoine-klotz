@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useCallback } from "react";
 
@@ -21,21 +20,17 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="bg-gradient-to-r from-[#0A4A35] via-[#0E5640] to-[#0D5038] text-white">
+    <footer className="bg-black text-white">
       <div className="max-w-6xl mx-auto">
         {/* Main Footer Content */}
-        <div className="py-12 px-8 md:px-0 border-b border-[#1A6A55]">
+        <div className="py-12 px-8 md:px-0 border-b border-white/70">
           <div className="flex flex-col md:flex-row justify-between gap-12">
             {/* Brand Section */}
             <div className="space-y-6 max-w-sm">
               <div className="flex items-center gap-2">
-                <Image src="/assets/logo-white.svg" alt="Robin Wood Logo" width={28} height={28} />
-                <p className="text-xl text-white font-satoshibold">Robin Wood</p>
+                <p className="text-xl text-white font-satoshibold">Project Name</p>
               </div>
-              <p className="text-gray-200 leading-relaxed">
-                Nachhaltige Forstwirtschaft und Umweltschutz für eine grünere Zukunft. Wir setzen uns für den Erhalt unserer Wälder und eine
-                nachhaltige Entwicklung ein.
-              </p>
+              <p className="text-gray-200 leading-relaxed">Project Description</p>
             </div>
 
             {/* Links Sections */}
@@ -98,7 +93,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 text-sm text-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>© {currentYear} Robin Wood. Alle Rechte vorbehalten.</p>
+            <p>© {currentYear} Project Name. Alle Rechte vorbehalten.</p>
             <div className="flex space-x-4">
               <Link href="https://facebook.com" className="hover:text-[#8AEA7C] transition-colors" aria-label="Facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
