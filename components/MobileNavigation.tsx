@@ -17,14 +17,14 @@ export default function MobileNavigation({ mobileMenuOpen, setMobileMenuOpen, ac
         className="bg-white rounded-full p-2 flex items-center justify-center z-50 relative"
         aria-label="Toggle menu"
       >
-        {mobileMenuOpen ? <X size={24} className="text-[#144723]" /> : <Menu size={24} className="text-[#144723]" />}
+        {mobileMenuOpen ? <X size={24} className="text-[#F65009]" /> : <Menu size={24} className="text-[#F65009]" />}
       </button>
 
       {/* Full Screen Mobile Menu Overlay with Right to Left Animation */}
       <div
         className={`fixed inset-0 transition-all duration-500 ease-in-out ${
           mobileMenuOpen ? "translate-x-0" : "translate-x-full pointer-events-none"
-        } bg-[#0E5640] z-40`}
+        } bg-[#F65009] z-40`}
         style={{ top: "65px" }} // Positioned right below the header
       >
         <div className="flex flex-col items-center justify-start pt-10 h-full">
@@ -34,7 +34,7 @@ export default function MobileNavigation({ mobileMenuOpen, setMobileMenuOpen, ac
               <button
                 key={item.name}
                 className={`text-xl px-6 py-4 my-1 rounded-full transition-all duration-200 ease-in-out flex items-center gap-2 w-64 justify-center font-satoshibold ${
-                  isActive ? "bg-[#8AEA7C] text-[#144723]" : "text-white hover:bg-white/10"
+                  isActive ? "bg-white text-black" : "text-white hover:bg-white/10"
                 }`}
                 onClick={() => scrollToSection(item.sectionId)}
               >
