@@ -9,5 +9,4 @@ export const navItems: NavItem[] = [
   { name: "Leistungen", sectionId: "leistungen" },
   { name: "Projekte", sectionId: "projekte" },
   { name: "Team", sectionId: "team" },
-  { name: "Kontakt", sectionId: "kontakt" },
 ];

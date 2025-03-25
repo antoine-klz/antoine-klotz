@@ -73,22 +73,36 @@ export default function TopNavigation() {
 
         {/* Desktop Navigation - hidden on mobile */}
         <nav className="hidden md:flex items-center">
-          <div className="bg-white rounded-full p-1 flex">
+          <div className="flex items-center gap-3">
             {navItems.map((item) => {
               const isActive = activeSection === item.sectionId;
               return (
                 <button
                   key={item.name}
-                  className={`text-md px-4 py-1.5 rounded-full transition-colors flex items-center gap-1.5 font-satoshibold ${
-                    isActive ? "bg-[#F65009] text-black" : "text-black hover:bg-gray-100"
+                  className={`relative text-md px-4 py-2 transition-all duration-300 ease-in-out flex items-center gap-1.5 font-satoshibold group ${
+                    isActive ? "text-[#F65009]" : "text-white hover:text-[#F65009]"
                   }`}
                   onClick={() => scrollToSection(item.sectionId)}
                 >
-                  {item.icon === "Home" && <Home size={16} />}
+                  {item.icon === "Home" && (
+                    <Home size={16} className={`${isActive ? "stroke-[#F65009]" : "stroke-white group-hover:stroke-[#F65009]"}`} />
+                  )}
                   {item.name}
+                  {isActive && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F65009] rounded-full"></span>}
+                  <span
+                    className={`absolute bottom-0 left-0 w-0 h-0.5 bg-[#F65009] rounded-full transition-all duration-300 group-hover:w-full ${
+                      isActive ? "opacity-0" : "opacity-100"
+                    }`}
+                  ></span>
                 </button>
               );
             })}
+            <button
+              className="ml-3 bg-[#F65009] text-black px-5 py-1.5 rounded-full font-satoshibold hover:bg-[#ff6b29] transition-colors"
+              onClick={() => scrollToSection("kontakt")}
+            >
+              Kontakt
+            </button>
           </div>
         </nav>
 
