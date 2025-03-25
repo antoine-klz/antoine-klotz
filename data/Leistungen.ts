@@ -1,4 +1,4 @@
-import { Shield, Leaf, Ruler, FileCheck, Clock, Users } from "lucide-react";
+import { Code, Palette, Cog, Layout } from "lucide-react";
 
 export interface Service {
   id: number;
@@ -11,44 +11,30 @@ export interface Service {
 export const services: Service[] = [
   {
     id: 1,
-    title: "Baumschutz auf Baustellen",
-    description: "Professioneller Schutz von Bäumen während Bauarbeiten gemäß aktuellen Standards und Vorschriften.",
-    icon: Shield,
-    color: "#8AEA7C",
+    title: "Webdesign",
+    description: "Maßgeschneiderte, ansprechende Webauftritte, die perfekt auf die Bedürfnisse von Handwerks- und Bauunternehmen zugeschnitten sind.",
+    icon: Layout,
+    color: "#F65009",
   },
   {
     id: 2,
-    title: "Ökologische Baubegleitung",
-    description: "Umweltfreundliche Begleitung Ihres Bauprojekts mit Fokus auf Nachhaltigkeit und Naturschutz.",
-    icon: Leaf,
-    color: "#8AEA7C",
+    title: "Web Entwicklung",
+    description: "Technisch ausgereifte Webseiten und Anwendungen mit optimaler Performance, die Ihre Dienstleistungen perfekt präsentieren.",
+    icon: Code,
+    color: "#F65009",
   },
   {
     id: 3,
-    title: "Baumgutachten",
-    description: "Fachkundige Beurteilung des Zustands und der Vitalität von Bäumen für Planungs- und Genehmigungsverfahren.",
-    icon: Ruler,
-    color: "#8AEA7C",
+    title: "Branding",
+    description: "Entwicklung einer starken Markenidentität, die Ihr Handwerksunternehmen klar positioniert und vom Wettbewerb abhebt.",
+    icon: Palette,
+    color: "#F65009",
   },
   {
     id: 4,
-    title: "Dokumentation",
-    description: "Umfassende Dokumentation aller Maßnahmen für Behörden und Qualitätssicherung.",
-    icon: FileCheck,
-    color: "#8AEA7C",
-  },
-  {
-    id: 5,
-    title: "Langzeitbetreuung",
-    description: "Kontinuierliche Betreuung und Überwachung während der gesamten Projektlaufzeit.",
-    icon: Clock,
-    color: "#8AEA7C",
-  },
-  {
-    id: 6,
-    title: "Beratung & Schulung",
-    description: "Fachliche Beratung und Schulung für Ihr Team zu allen Aspekten des Baumschutzes.",
-    icon: Users,
-    color: "#8AEA7C",
+    title: "Prozessautomatisierung",
+    description: "Digitalisierung und Automatisierung Ihrer Arbeitsabläufe für mehr Effizienz und Kundenzufriedenheit.",
+    icon: Cog,
+    color: "#F65009",
   },
 ];

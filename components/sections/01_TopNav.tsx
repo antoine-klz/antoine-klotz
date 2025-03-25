@@ -3,6 +3,7 @@ import { Home } from "lucide-react";
 import { useState, useEffect } from "react";
 import { navItems } from "@/data/TopNav";
 import MobileNavigation from "@/components/MobileNavigation";
+import Image from "next/image";
 
 export default function TopNavigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -67,7 +68,7 @@ export default function TopNavigation() {
     <header className="px-4 lg:px-6 h-[65px] flex items-center justify-center fixed top-0 left-0 right-0 z-50 bg-black">
       <div className="w-full max-w-6xl flex justify-between items-center">
         <button onClick={() => scrollToSection("hero")} className="flex items-center gap-2">
-          <span className="text-2xl text-white mt-0.5 font-satoshibold">Project Name</span>
+          <Image src="/assets/logo.svg" alt="DoubleAA" width={120} height={120} />
         </button>
 
         {/* Desktop Navigation - hidden on mobile */}

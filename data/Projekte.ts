@@ -1,35 +1,38 @@
-export interface ProjectPin {
+export interface Projects {
   id: number;
-  top: string;
-  left: string;
   name: string;
-  address: string;
   year: string;
+  url: string;
+  services: string[];
+  description: string;
 }
 
-export const projectPins: ProjectPin[] = [
+export const projectPins: Projects[] = [
   {
     id: 1,
-    top: "73%",
-    left: "50%",
-    name: "Elbphilharmonie Baumschutz",
-    address: "Platz der Deutschen Einheit 1, 20457 Hamburg",
-    year: "2022",
+    name: "Konstantin Beck",
+    year: "2025",
+    url: "konstantinbeck.com",
+    services: ["Webdesign", "Webentwicklung", "Branding"],
+    description:
+      "Konstantin Beck ist ein professioneller Webentwickler und Designer mit einem starken Fokus auf die Benutzerfreundlichkeit und die Optimierung von Webseiten.",
   },
   {
     id: 2,
-    top: "38%",
-    left: "58%",
-    name: "Stadtpark Revitalisierung",
-    address: "Stadtpark 1, 22303 Hamburg",
-    year: "2023",
+    name: "Robin Wood",
+    year: "2025",
+    url: "https://robin-wood-chi.vercel.app/",
+    services: ["Webdesign", "Webentwicklung", "Branding", "Automatisierung"],
+    description:
+      "Robin Wood ist ein professioneller Webentwickler und Designer mit einem starken Fokus auf die Benutzerfreundlichkeit und die Optimierung von Webseiten.",
   },
   {
     id: 3,
-    top: "55%",
-    left: "42%",
-    name: "Kreuzkirche Baumschutz",
-    address: "Kreuzkirche 1, 20357 Hamburg",
+    name: "Mobicare",
     year: "2024",
+    url: "https://mobicare-ruby.vercel.app//",
+    services: ["Webdesign", "Webentwicklung", "Branding"],
+    description:
+      "Robin Wood ist ein professioneller Webentwickler und Designer mit einem starken Fokus auf die Benutzerfreundlichkeit und die Optimierung von Webseiten.",
   },
 ];

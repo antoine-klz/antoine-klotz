@@ -6,8 +6,8 @@ export interface TeamMember {
 
 export const teamMembers: TeamMember[] = [
   {
-    name: "Lukas Wenrich",
-    role: "Baumpflege",
+    name: "Antoine Klotz",
+    role: "Design & Entwicklung",
     description: "Experte in seinem Bereich mit langjähriger Erfahrung.",
   },
   {

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useCallback } from "react";
-
+import Image from "next/image";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -27,10 +27,10 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between gap-12">
             {/* Brand Section */}
             <div className="space-y-6 max-w-sm">
-              <div className="flex items-center gap-2">
-                <p className="text-xl text-white font-satoshibold">Project Name</p>
-              </div>
-              <p className="text-gray-200 leading-relaxed">Project Description</p>
+              <Image src="/assets/logo.svg" alt="Logo" width={100} height={100} />
+              <p className="text-gray-200 leading-relaxed">
+                DoubleAA ist eine Webagentur, die professionelle Webseiten für Unternehmen und Organisationen erstellt.
+              </p>
             </div>
 
             {/* Links Sections */}

@@ -1,5 +1,4 @@
-import ValueCards from "@/components/ValueCards";
-import NavButtons from "@/components/NavButtons";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -12,26 +11,19 @@ export default function Hero() {
       <div className="container px-4 md:px-6 w-full mx-auto max-w-8xl z-10 relative flex flex-col justify-center items-center h-full">
         <div className="w-full flex flex-col items-center">
           <header className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-black mb-4 md:mb-6 font-satoshibold hidden sm:block">
-              Project Name
-            </h1>
-            <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl text-black mb-6 md:mb-8 md:font-satoshi font-satoshibold">
-              Project Description
+            <Image src="/assets/logo-black.svg" alt="DoubleAA" width={100} height={100} className="mb-6 justify-center items-center w-full" />
+            <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl mb-6 md:mb-8 md:font-satoshi font-satoshibold text-center  text-[#F65009]">
+              Digitale Lösungen für Ihr Handwerksunternehmen
             </h2>
 
-            {/* Value Cards */}
-            <div className="hidden md:block">
-              <ValueCards iconSize={32} showDescription={true} />
-            </div>
-            <div className="md:hidden">
-              <ValueCards iconSize={24} showDescription={true} />
+            <div className="max-w-3xl mx-auto text-center">
+              <p className="text-base md:text-lg mb-4">
+                Wir bringen Ihr Handwerks- oder Bauunternehmen ins digitale Zeitalter. Mit maßgeschneiderten Webauftritten, professionellem Branding
+                und cleverer Prozessautomatisierung steigern wir Ihre Effizienz und Sichtbarkeit.
+              </p>
+              <p className="text-base md:text-lg font-medium ">Handwerk trifft Technologie. Tradition trifft Innovation.</p>
             </div>
           </header>
-
-          {/* Nav Buttons */}
-          <div className="mt-8 md:mt-16 w-full px-2 md:mb-8">
-            <NavButtons secondaryButton="leistungen" />
-          </div>
         </div>
       </div>
     </section>

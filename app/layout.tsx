@@ -17,10 +17,10 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Website Title",
-  description: "Website Description",
+  title: "DoubleAA - Web Agentur für digitale Lösungen",
+  description: "Web Agentur für digitale Lösungen",
   icons: {
-    icon: "/assets/logo.png",
+    icon: "/assets/favicon.svg",
   },
 };
 
