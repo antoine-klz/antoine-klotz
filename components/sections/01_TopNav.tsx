@@ -79,7 +79,7 @@ export default function TopNavigation() {
                 <button
                   key={item.name}
                   className={`text-md px-4 py-1.5 rounded-full transition-colors flex items-center gap-1.5 font-satoshibold ${
-                    isActive ? "bg-[#8AEA7C] text-[#144723]" : "text-[#144723] hover:bg-gray-100"
+                    isActive ? "bg-[#F65009] text-black" : "text-black hover:bg-gray-100"
                   }`}
                   onClick={() => scrollToSection(item.sectionId)}
                 >
