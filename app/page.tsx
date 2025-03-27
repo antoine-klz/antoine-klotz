@@ -1,14 +1,14 @@
 import Hero from "@/components/sections/02_Hero";
-import Leistungen from "@/components/sections/03_Leistungen";
-import Projekte from "@/components/sections/04_Projekte";
+import Services from "@/components/sections/04_Services";
+import Portfolio from "@/components/sections/03_Portfolio";
 import Kontakt from "@/components/sections/06_Kontakt";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Projekte />
-      <Leistungen />
+      <Portfolio />
+      <Services />
       <Kontakt />
     </>
   );

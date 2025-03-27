@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="w-full h-[calc(100vh-65px)] mt-[65px] relative flex flex-col py-8 md:py-0 overflow-hidden bg-gradient-to-r from-[#0a1832] via-[#172d52] to-[#0a1832] text-white"
+      className="w-full h-[calc(100vh-65px)] mt-[65px] relative flex flex-col py-8 md:py-0 overflow-hidden  text-white"
       aria-label="Hero section"
     >
       {/* Content Container - centered vertically with flex */}

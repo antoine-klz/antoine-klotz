@@ -25,7 +25,7 @@ export const projectPins: Projects[] = [
     description:
       "Konstantin Beck ist ein professioneller Webentwickler und Designer mit einem starken Fokus auf die Benutzerfreundlichkeit und die Optimierung von Webseiten.",
     logo: "/projects/konstantin-beck/logo.svg",
-    screenshots: ["/projects/konsti-beck1.png"],
+    screenshots: ["/assets/projects/konsti-beck1.png"],
     testimonials: [
       {
         name: "Konstantin Beck",
@@ -44,7 +44,7 @@ export const projectPins: Projects[] = [
     description:
       "Robin Wood ist ein professioneller Webentwickler und Designer mit einem starken Fokus auf die Benutzerfreundlichkeit und die Optimierung von Webseiten.",
     logo: "/projects/robin-wood/logo.svg",
-    screenshots: ["/projects/robin-wood/screenshot1.jpg", "/projects/robin-wood/screenshot2.jpg"],
+    screenshots: ["/assets/projects/robin-wood1.png"],
     testimonials: [
       {
         name: "Robin Wood",
@@ -63,7 +63,7 @@ export const projectPins: Projects[] = [
     description:
       "Robin Wood ist ein professioneller Webentwickler und Designer mit einem starken Fokus auf die Benutzerfreundlichkeit und die Optimierung von Webseiten.",
     logo: "/projects/mobicare/logo.svg",
-    screenshots: ["/projects/mobicare/screenshot1.jpg", "/projects/mobicare/screenshot2.jpg"],
+    screenshots: ["/assets/projects/mobicare1.png"],
     testimonials: [
       {
         name: "Sandra Meyer",

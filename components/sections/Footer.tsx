@@ -91,7 +91,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 text-sm text-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>© {currentYear} Robin Wood. Alle Rechte vorbehalten.</p>
+            <p>© {currentYear} Antoine Klotz IT Dienstleistungen. Alle Rechte vorbehalten.</p>
 
             <div className="flex space-x-4">
               <Link href="https://instagram.com" className="hover:text-[#ff3647] transition-colors" aria-label="Instagram">

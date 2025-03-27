@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${satoshi.variable} ${satoshiBold.variable} antialiased bg-white`}>
+      <body className={`${satoshi.variable} ${satoshiBold.variable} antialiased bg-gradient-to-b from-[#0a1832] via-[#172d52] to-[#0a1832]`}>
         <TopNav />
         {children}
         <Footer />

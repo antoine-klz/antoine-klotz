@@ -90,7 +90,7 @@ export default function TopNavigation() {
             })}
             <button
               className="bg-[#ff3647] text-white px-5 py-1.5 rounded-full font-medium hover:bg-[#ff3647] transition-colors ml-1"
-              onClick={() => scrollToSection("kontakt")}
+              onClick={() => scrollToSection("contact")}
             >
               Contact
             </button>
