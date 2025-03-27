@@ -17,10 +17,10 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "DoubleAA - Web Agentur für digitale Lösungen",
-  description: "Web Agentur für digitale Lösungen",
+  title: "Antoine Klotz - Web Entwickler",
+  description: "Web Entwickler für digitale Lösungen",
   icons: {
-    icon: "/assets/favicon.svg",
+    icon: "/assets/ak-logo.png",
   },
 };
 

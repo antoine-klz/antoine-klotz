@@ -3,8 +3,8 @@ import { services } from "@/data/Leistungen";
 
 export default function Leistungen() {
   return (
-    <section id="leistungen" className="w-full min-h-[calc(100vh-65px)] py-16 px-4">
-      <h2 className="text-4xl md:text-5xl text-black text-center font-satoshibold mb-4">Unsere Leistungen</h2>
+    <section id="services" className="w-full min-h-[calc(100vh-65px)] py-16 px-4">
+      <h2 className="text-4xl md:text-5xl text-black text-center font-satoshibold mb-4">What I offer</h2>
       {/* Accent line */}
       <div className="flex justify-center mb-16">
         <div className="w-24 h-1 bg-[#F65009]"></div>

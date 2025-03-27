@@ -6,7 +6,6 @@ export interface NavItem {
 
 export const navItems: NavItem[] = [
   { name: "Home", sectionId: "hero", icon: "Home" },
-  { name: "Leistungen", sectionId: "leistungen" },
-  { name: "Projekte", sectionId: "projekte" },
-  { name: "Team", sectionId: "team" },
+  { name: "Projects", sectionId: "projects", icon: "Projects" },
+  { name: "Services", sectionId: "services" },
 ];

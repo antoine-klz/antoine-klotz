@@ -29,10 +29,11 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between gap-12">
             {/* Brand Section */}
             <div className="space-y-6 max-w-sm">
-              <Image src="/assets/logo.svg" alt="Logo" width={100} height={100} />
-              <p className="text-gray-200 leading-relaxed">
-                DoubleAA ist eine Webagentur, die professionelle Webseiten für Unternehmen und Organisationen erstellt.
-              </p>
+              <button onClick={() => scrollToSection("hero")} className="flex items-center">
+                <Image src="/assets/ak-logo.png" alt="DoubleAA" width={60} height={60} />
+                <span className="text-white text-xl tracking-wide">Antoine Klotz</span>
+              </button>
+              <p className="text-gray-200 leading-relaxed">Webentwickler für digitale Lösungen.</p>
             </div>
 
             {/* Links Sections */}

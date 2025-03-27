@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Kontakt() {
   return (
-    <section id="kontakt" className="w-full min-h-[calc(100vh-65px)] relative bg-white ">
+    <section id="contact" className="w-full min-h-[calc(100vh-65px)] relative bg-white flex">
       <div className="flex-1 px-4 md:px-6 lg:px-8 pt-10 relative z-10 h-full md:pt-24 ">
         <div className="mx-auto max-w-6xl h-full flex flex-col ">
           <h2 className="text-5xl font-satoshibold text-black mb-6">Kontakt</h2>

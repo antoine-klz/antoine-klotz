@@ -1,5 +1,4 @@
 "use client";
-import { Home } from "lucide-react";
 import { useState, useEffect } from "react";
 import { navItems } from "@/data/TopNav";
 import MobileNavigation from "@/components/MobileNavigation";
@@ -13,7 +12,7 @@ export default function TopNavigation() {
   useEffect(() => {
     const handleScroll = () => {
       // Track active section
-      const sections = ["hero", "leistungen", "projekte", "team", "kontakt"];
+      const sections = ["hero", "projects", "services", "kontakt"];
       const navHeight = 65; // Height of the navigation bar
       const scrollPosition = window.scrollY + navHeight; // Use nav height for better detection
 
@@ -65,43 +64,35 @@ export default function TopNavigation() {
   };
 
   return (
-    <header className="px-4 lg:px-6 h-[65px] flex items-center justify-center fixed top-0 left-0 right-0 z-50 bg-black">
+    <header className="px-4 lg:px-6 h-[65px] flex items-center justify-center fixed top-0 left-0 right-0 z-50 bg-[#a6a6a690] backdrop-blur-sm">
       <div className="w-full max-w-6xl flex justify-between items-center">
-        <button onClick={() => scrollToSection("hero")} className="flex items-center gap-2">
-          <Image src="/assets/logo.svg" alt="DoubleAA" width={120} height={120} />
+        <button onClick={() => scrollToSection("hero")} className="flex items-center">
+          <Image src="/assets/ak-logo.png" alt="DoubleAA" width={80} height={80} />
+          <span className="text-white font-satoshibold text-xl tracking-wide">Antoine Klotz</span>
         </button>
 
         {/* Desktop Navigation - hidden on mobile */}
         <nav className="hidden md:flex items-center">
-          <div className="flex items-center gap-3">
+          <div className="bg-[#3a3a3a] rounded-full px-2 py-1.5 flex items-center">
             {navItems.map((item) => {
               const isActive = activeSection === item.sectionId;
               return (
                 <button
                   key={item.name}
-                  className={`relative text-md px-4 py-2 transition-all duration-300 ease-in-out flex items-center gap-1.5 font-satoshibold group ${
-                    isActive ? "text-[#F65009]" : "text-white hover:text-[#F65009]"
+                  className={`relative text-md px-4 py-1.5 transition-all duration-300 ease-in-out ${
+                    isActive ? "text-[#F65009] font-medium" : "text-[#e0e0e0] hover:text-white"
                   }`}
                   onClick={() => scrollToSection(item.sectionId)}
                 >
-                  {item.icon === "Home" && (
-                    <Home size={16} className={`${isActive ? "stroke-[#F65009]" : "stroke-white group-hover:stroke-[#F65009]"}`} />
-                  )}
                   {item.name}
-                  {isActive && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F65009] rounded-full"></span>}
-                  <span
-                    className={`absolute bottom-0 left-0 w-0 h-0.5 bg-[#F65009] rounded-full transition-all duration-300 group-hover:w-full ${
-                      isActive ? "opacity-0" : "opacity-100"
-                    }`}
-                  ></span>
                 </button>
               );
             })}
             <button
-              className="ml-3 bg-[#F65009] text-black px-5 py-1.5 rounded-full font-satoshibold hover:bg-[#ff6b29] transition-colors"
+              className="bg-[#F65009] text-white px-5 py-1.5 rounded-full font-medium hover:bg-[#ff3647] transition-colors ml-1"
               onClick={() => scrollToSection("kontakt")}
             >
-              Kontakt
+              Contact
             </button>
           </div>
         </nav>
