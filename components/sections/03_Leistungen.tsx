@@ -7,7 +7,7 @@ export default function Leistungen() {
       <h2 className="text-4xl md:text-5xl text-black text-center font-satoshibold mb-4">What I offer</h2>
       {/* Accent line */}
       <div className="flex justify-center mb-16">
-        <div className="w-24 h-1 bg-[#F65009]"></div>
+        <div className="w-24 h-1 bg-[#ff3647]"></div>
       </div>
 
       <div className="max-w-6xl mx-auto">
@@ -15,7 +15,7 @@ export default function Leistungen() {
           {services.map((service) => (
             <div
               key={service.id}
-              className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/20 shadow-lg transition-all duration-300 hover:bg-white/15 hover:shadow-xl hover:ring-2 hover:ring-[#F65009]/50 flex flex-col justify-between h-full"
+              className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/20 shadow-lg transition-all duration-300 hover:bg-white/15 hover:shadow-xl hover:ring-2 hover:ring-[#ff3647]/50 flex flex-col justify-between h-full"
             >
               <div>
                 <div className="w-14 h-14 flex items-center justify-center rounded-xl mb-5" style={{ backgroundColor: `${service.color}20` }}>

@@ -12,7 +12,7 @@ export default function TopNavigation() {
   useEffect(() => {
     const handleScroll = () => {
       // Track active section
-      const sections = ["hero", "projects", "services", "kontakt"];
+      const sections = ["hero", "portfolio", "services", "kontakt"];
       const navHeight = 65; // Height of the navigation bar
       const scrollPosition = window.scrollY + navHeight; // Use nav height for better detection
 
@@ -64,23 +64,23 @@ export default function TopNavigation() {
   };
 
   return (
-    <header className="px-4 lg:px-6 h-[65px] flex items-center justify-center fixed top-0 left-0 right-0 z-50 bg-[#a6a6a690] backdrop-blur-sm">
+    <header className="px-4 lg:px-6 h-[65px] flex items-center justify-center fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#0c0c24] via-[#142541] to-[#0c0c24] backdrop-blur-sm">
       <div className="w-full max-w-6xl flex justify-between items-center">
         <button onClick={() => scrollToSection("hero")} className="flex items-center">
-          <Image src="/assets/ak-logo.png" alt="DoubleAA" width={80} height={80} />
-          <span className="text-white font-satoshibold text-xl tracking-wide">Antoine Klotz</span>
+          <Image src="/assets/ak-logo.png" alt="DoubleAA" width={55} height={55} />
+          <span className="text-white text-xl tracking-wide">Antoine Klotz</span>
         </button>
 
         {/* Desktop Navigation - hidden on mobile */}
         <nav className="hidden md:flex items-center">
-          <div className="bg-[#3a3a3a] rounded-full px-2 py-1.5 flex items-center">
+          <div className="bg-[#1e396b] rounded-full px-2 py-1.5 flex items-center">
             {navItems.map((item) => {
               const isActive = activeSection === item.sectionId;
               return (
                 <button
                   key={item.name}
                   className={`relative text-md px-4 py-1.5 transition-all duration-300 ease-in-out ${
-                    isActive ? "text-[#F65009] font-medium" : "text-[#e0e0e0] hover:text-white"
+                    isActive ? "text-[#ff3647] font-medium" : "text-white hover:text-[#e0e0e0]"
                   }`}
                   onClick={() => scrollToSection(item.sectionId)}
                 >
@@ -89,7 +89,7 @@ export default function TopNavigation() {
               );
             })}
             <button
-              className="bg-[#F65009] text-white px-5 py-1.5 rounded-full font-medium hover:bg-[#ff3647] transition-colors ml-1"
+              className="bg-[#ff3647] text-white px-5 py-1.5 rounded-full font-medium hover:bg-[#ff3647] transition-colors ml-1"
               onClick={() => scrollToSection("kontakt")}
             >
               Contact
